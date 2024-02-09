@@ -1,84 +1,74 @@
 /*contact page*/
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-header {
-    position: relative;
-    width: 100%;
-    min-height: 400px;
-    padding-top: 3em;
-    background: no-repeat lightgrey url(images/contact-hero.jpeg);
-    background-size: 1500px;
-        
-    } 
 
-header img {
-    width: 100%;
-    height: auto;
+
+/* locations */
+.location-table {
+    border-collapse: collapse;
+    font-size: 3px;
+    /* Set the font size */
 }
-.main-header {
+
+.location-table td {
+    border: none;
+    padding: 10px;
+    /* Set the cell size */
+}
+
+.highlighted {
+    color: black;
+    /* Set the background color for highlighted cells */
+    font-size: 20px;
+}
+
+.normal {
+    color: #55ACEE;
+    /* Set the font color */
+    font-size: 12px;
+}
+
+
+.location-table {
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #333;
+}
+
+.location-table td {
+    border: none;
+    padding: 12px;
+}
+
+.locations-help-container {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    }
-.logo {
-    position: absolute;
-    top: 1px;
-    left: 20px;
-    right: 20px;
-    z-index: 1001;
-}
-.logo img {
-    width: 155px;
-    height: auto;
-    padding-bottom: 40px;
-}
-.nav-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 0;
-    padding-left: 3em;
-    background-color: rgba(51, 52, 53, 0.8); /* Adjust background color and transparency as needed */
-    z-index: 1000;
 }
 
-nav {
-    font-family:Arial, Helvetica, sans-serif;
-    position: absolute;
-    top: 0;
-    left: 0; 
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 20px 40px 20px 150px;
-    /*background-color: rgba(51, 52, 53, 0.8); /* Adjust background color and transparency as needed */
-    z-index: 1000;
-   
+.table-row {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 60px;
 }
 
-nav ul {
-    list-style-type: none; /* Remove default list styles */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    display: flex; /* Make the list items flex items */
-    justify-content: space-around; /* Distribute items horizontally */
+.table-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    text-align: center;
+    width: 150px;
 }
 
-nav ul li {
-   /* style the list items here */
-}
-
-nav ul li a {
-    color: #fff; /* Text color of the navigation links */
-    text-decoration: none; /* Remove underline from the links */
-    font-size: 10px; /* Font size of the links */
-}
-
-nav ul li a:hover {
-    text-decoration: underline; /* Underline the link on hover */
+.svg-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-style: hidden;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+    padding: 30px;
+    margin-bottom: 10px;
 }
