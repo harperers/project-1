@@ -1,4 +1,5 @@
 /*contact page*/
+<<<<<<< HEAD
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -64,9 +65,53 @@ header {
         transform: scale(1.1); /* Add scaling effect on hover */
     }
 .main-header {
+=======
+
+
+/* locations */
+.location-table {
+    border-collapse: collapse;
+    font-size: 3px;
+    /* Set the font size */
+}
+
+.location-table td {
+    border: none;
+    padding: 10px;
+    /* Set the cell size */
+}
+
+.highlighted {
+    color: black;
+    /* Set the background color for highlighted cells */
+    font-size: 20px;
+}
+
+.normal {
+    color: #55ACEE;
+    /* Set the font color */
+    font-size: 12px;
+}
+
+
+.location-table {
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #333;
+}
+
+.location-table td {
+    border: none;
+    padding: 12px;
+}
+
+.locations-help-container {
+>>>>>>> ad950e402944a2cf4c9d85e691a84ac60437650f
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     padding: 0 20px;
     }
 .logo {
@@ -247,4 +292,34 @@ html, body {
     margin: 0 10px; /* Add some spacing between icons */
     font-size: 24px; /* Adjust the icon size */
     color: #333; /* Adjust the icon color */
+=======
+}
+
+.table-row {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 60px;
+}
+
+.table-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    text-align: center;
+    width: 150px;
+}
+
+.svg-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-style: hidden;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+    padding: 30px;
+    margin-bottom: 10px;
+>>>>>>> ad950e402944a2cf4c9d85e691a84ac60437650f
 }
