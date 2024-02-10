@@ -32,7 +32,7 @@ input[type="submit"],
     width: calc(100% - 22px); /*  */
 }
 input[type="submit"] {
-    background-color: blue;
+    background-color:#0cdef1 ;
     color: white;
     border: none;
     cursor: pointer;
@@ -40,7 +40,7 @@ input[type="submit"] {
 .signup-btn {
     background-color: white;
     color: #95e8ef;
-    border: 2px solid #37dde0;
+    border: 2px solid #0cdef1;
     cursor: pointer;
 }
 .signup-btn:hover {
@@ -55,9 +55,28 @@ label {
 .forgot-password {
     text-align: right;
     padding-left: 400px;
+    color:#0cdef1;
 }
 .forgot-password-container {
     text-align: right;
     margin-top: 10px; /* Added margin to create space */
     margin-bottom: 100px;
+}
+ /* images */
+ .shark-img {
+    position: absolute; /* Make image position absolute */
+    bottom: 100px; /* Adjust top position to hang off the upper left corner */
+    left: -50px; /* Adjust left position to hang off the upper left corner */
+    width: 300px; /* Set width for shark image */
+    height: 300px; /* Set height for shark image */
+    border-radius: 10px; /* Rounded corners for the shark image */
+    margin-bottom: 20px; /* Added margin below the shark image */
+    padding-left: 150px;
+}
+.splashwave-img {
+    width: 300px; /* Set width for splashwave image */
+    height: 200px; /* Set height for splashwave image */
+    border-radius: 10px; /* Rounded corners for the splashwave image */
+    margin: 20px auto; /* Center the image horizontally and add margin */
+    display: block; /* Set the image as a block-level element */
 }
