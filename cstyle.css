@@ -1,5 +1,4 @@
 /*contact page*/
-<<<<<<< HEAD
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -65,7 +64,6 @@ header {
         transform: scale(1.1); /* Add scaling effect on hover */
     }
 .main-header {
-=======
 
 
 /* locations */
@@ -106,7 +104,6 @@ header {
 }
 
 .locations-help-container {
->>>>>>> ad950e402944a2cf4c9d85e691a84ac60437650f
     display: flex;
     flex-direction: column;
     justify-content: center;
