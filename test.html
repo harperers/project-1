@@ -1,78 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Splashes</title>
+    <title>Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="cstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /*index header*/
+ 
+.main-header-image {
+        position: relative;
+    }
+.main-header-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 
+.main-header-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        width: 100%;
+    }
+.main-header img {
+    width: 100%;
+    height: auto;
+}
+.p-container {
+        text-align: center;
+        margin-top: 20px; /* Add space between header and paragraph */
+    }
+/*button within image*/
+.buttons-container {
+    position: absolute;
+    top: 55%; /* Adjust this value to position the buttons lower */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+   
+}
+.btn-custom {
+    background-color: white;
+    color: #37dde0;
+    padding: 8px 16px; /* Adjust padding to your preference */
+    border-radius: 20px; /* Add border radius for rounded corners */
+    border: none;
+}
+.buttons-container h1 {
+    color: white;
+}
+/*Primary Navigation Styles*/
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px 40px 150px;
+    background-color: rgba(51, 52, 53, 0.8); /* Adjust background color and transparency as needed */
+    z-index: 1000;
+}
+
+.nav-primary { /* words*/
+    font-family:Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 40px 20px 150px;
+    /*background-color: rgba(51, 52, 53, 0.8);  Adjust background color and transparency as needed */
+    z-index: 1000;
+    
+}
+
+.nav-primary ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0px 80px 80px; /* Remove default padding */
+    display: flex; /* Make the list items flex items */
+    justify-content: space-around; /* Distribute items horizontally */
+}
+
+.nav-primary ul li {
+    margin-right: 80px; /* Adjust margin-right to reduce spacing between list items */
+}
+
+
+.nav-primary ul li a {
+    color: #fff; /* Text color of the navigation links */
+    text-decoration: none; /* Remove underline from the links */
+    font-size: 10px; /* Font size of the links */
+}
+.nav-primary ul li a span {
+    padding: 8px 16px; /* Add padding to create button-like appearance */
+    border: 2px solid #fff; /* Add border */
+    border-radius: 4px; /* Add border radius for rounded corners */
+}
+.nav-primary ul li a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+.nav-primary .register-sign-in{ /*button*/
+    background-color: white;
+    color: blue;
+    padding: 8px 16px; /* Adjust padding to your preference */
+    border-radius: 20px; /* Add border radius for rounded corners */
+    border: none;
+}
+.nav-primary .register-sign-in span {
+    border: none; /* Remove border from the span element */
+}
+
+
+/*header logo*/
+.logo {
+    position: absolute;
+    top: 1px;
+    left: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+.logo img { /*fish with splashes*/
+    width: 175px;
+    height: auto;
+    padding-bottom: 40px;
+}
+    </style>
 </head>
+
 <body>
-    <header>
+    <header class="main-header">
+        <!-- Your header image -->
+        <div class="header-image-container text-center">
+            <img src="project_1/images/home.jpeg" alt="Header Image" class="header-image">
+            
+            <!-- Buttons container -->
+            <div class="buttons-container">
+                <h1>Learning it the Right Way, Right from the Beginning</h1>
+                <button class="btn btn-custom">Informational Video</button>
+                <button class="btn btn-custom">Swimvenger</button>
+            </div>
+        </div>
+    </header>
         
-        <img src="images/contact-hero.jpeg" alt="Splashes Pool" width="1280" height="564">
+       <!-- Navigation -->
+       <header class="header content">
         <div class="nav-container">
             <div class="main-header">
                 <div class="logo">
-                    <img src="images/logo-small.png" alt="Splashes Logo" width="125" height="100">
-            
+                    <img src="Project_1\images\logo-small.png" alt="Splashes Logo" width="125" height="100">
                 </div>
             </div>
         </div>
-        <div class="header-content">
-            <h1>Contact Us</h1>
-            
-        </div>        
+        
+        <nav class="nav-primary">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#swimming-lessons">Swimming Lessons</a></li>
+                <li><a href="#swim-programs">Swim Programs</a></li>
+                <li><a href="#adult-programs">Adult Programs</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#register-sign-in" class="register-sign-in"><span>Register/Sign In</span></a></li>
+            </ul>
+        </nav>      
     </header>
-   
-    <div class="container">
-        <p>We'd love to help. Send us an email using one of the buttons below and <br> a representative will get back to you as soon as possible.</p>
-        <div class="icon-row">
-            <button class="icon-button">
-                <!-- SVG code for your first button -->
-                <img src="Images\compliment.svg" alt="Baby Icon" class="icon-button">
+        <!-- Navigation 
+       <nav class="nav-primary">
+        <div class="nav-container navbar navbar-expand-lg navbar-light bg-light">
+            <div class="logo">
+                <img src="Project_1\images\logo-small.png" alt="Splashes Logo" width="125" height="100">
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <button class="icon-button">
-                <!-- SVG code for your second button -->
-            </button>
-            <button class="icon-button">
-                <!-- SVG code for your third button -->
-            </button>
-            <button class="icon-button">
-                <!-- SVG code for your fourth button -->
-            </button>
+       
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#swimming-lessons">Swimming Lessons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#swim-programs">Swim Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#adult-programs">Adult Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#locations">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Use Bootstrap button classes for the "Register/Sign In" button 
+                        <a href="#register-sign-in" class="btn btn-outline-primary nav-link">Register/Sign In</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="icon-row">
-            <button class="icon-button">
-                <!-- SVG code for your fifth button -->
-            </button>
-            <button class="icon-button">
-                <!-- SVG code for your sixth button -->
-            </button>
-            <button class="icon-button">
-                <!-- SVG code for your seventh button -->
-            </button>
-            <button class="icon-button">
-                <!-- SVG code for your eighth button -->
-            </button>
-    </div>
-    
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#swimming-lessons">Swimming Lessons</a></li>
-            <li><a href="#swim-programs">Swim Programs</a></li>
-            <li><a href="#adult-programs">Adult Programs</a></li>
-            <li><a href="#locations">Locations</a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
-            <li><a href="#register-sign-in"><span>Register/Sign In</span></a></li>
-        </ul>
-    </nav>
-
-    
-  
-
-</body>
-</html>
+            </nav> -->
+            <section id="home1" style="background-image: url('project_1/images/home-hands-on-teaching.jpeg');">
+                <a href="index.html"><img src="project_1/images/register-online-here-banner.png" alt="Register online"></a>
+                <a href="index.html"><img src="project_1/images/ww-site-hiring-banner-resized.png" alt="Now hiring"></a>
+                <h2>Hands On Teaching</h2>
+                <p>Splashes Aquatics Swim School provides high quality swim instruction and the ideal environment for
+                    learning how
+                    to swim. Our swim instructors use specialized “muscle memory” teaching techniques that help our students
+                    progress at a quick rate. Grouped by age and ability, our students benefit from swim classes that offer
+                    personalized attention. It’s never too late to learn to swim!</p>
+                <h3>Splashes Offers:</h3>
+                <ul>
+                    <p><a href="index.html">Private Swimming Lessons</a> - All Locations</p>
+                    <p><a href="index.html">Semi-Private Swimming Lessons</a> - All Locations</p>
+                    <p><a href="index.html">Parent & Me (Baby) Swimming Lessons</a> - Select Locations</p>
+                </ul>
+                <p>Select locations also offer additional swim programs such as swim competitions, swim teams, water
+                    aerobics,
+                    aquatic therapy, swim camps and more! To learn more about the Splashes Family Swim School near you,
+                    select a
+                    location below.</p>
+                <p>Ready to sign up?</p>
+                <div class="bluebtn"><a href="register.html">REGISTER NOW</a></div>
+            </section>
+        
+            <section id="home2"
+                style="background-image: url('Project_1/images/home-our-locations-bg.jpeg'), url('Project_1/images/home-our-locations-map.jpeg');">
+                <h1>Find a Splashes Swim School near you</h1>
+                <h2>Family Swim School Locations</h2>
+                <p>Splashes Aquatics offers the finest professional swimming lessons from 21 swim schools and aquatic
+                    centers in California and Denver.</p>
+                <div class="bluebtn"><a href="register.html">Find a Location Near You</a></div>
+            </section>
+        
+            <section id="awards">
+                <h1>Awards We've Won</h1>
+                <!-- Use Javascript to display awards? -->
+                <ul>
+                    <li><img src="project_1/images/awards/colorado-parenting-family-fav2021.png"></li>
+                    <li><img src="project_1/images/awards/bay-area-parent-gold2020.png"></li>
+                    <li><img src="project_1/images/awards/mla-swim-lessons-winner-2020-250x250.png"></li>
+                    <li><img src="project_1/images/awards/colorado-parenting-family-fav2020.png"></li>
+                    <li><img src="project_1/images/awards/website-parenting-oc-2019.jpeg"></li>
+                    <li><img src="project_1/images/awards/colorado-parenting-family-fav2019.jpeg"></li>
+                    <li><img src="project_1/images/awards/bay-area-parent-2019.jpeg"></li>
+                    <li><img src="project_1/images/awards/gold-daisy-award-finalist-2018.jpeg"></li>
+                    <li><img src="project_1/images/awards/best-of-la-kids-winner.jpeg"></li>
+                    <li><img src="project_1/images/awards/best-of-the-best-2018.jpeg"></li>
+                </ul>
+            </section>
+        
+            <footer style="background-image: url('Project_1/images/footer-bg.jpeg')">
+                <img src="images/wave-small.png">
+                <div>
+                    <nav class="footer-menu">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="locations.html">Locations</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="register.html">Register/Sign In</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social">
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-yelp"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                    <div class="locations">
+                        <ul>
+                            <li>
+                                <p>Orange County</p>
+                                <p>(949)450-0777</p>
+                            </li>
+                            <li>
+                                <p>San Diego County</p>
+                                <p>(760)603-9400</p>
+                            </li>
+                            <li>
+                                <p>Los Angeles County</p>
+                                <p>(626)836-1200</p>
+                            </li>
+                            <li>
+                                <p>Northern California</p>
+                                <p>(408)279-1700</p>
+                            </li>
+                            <li>
+                                <p>Denver</p>
+                                <p>(720)344-7700</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sponsors">
+                        <ul>
+                            <li><img src="project_1/images/sponsors/footer-usssa-logo-2.png"></li>
+                            <li><img src="project_1/images/sponsors/footer-ndpa-logo.png"></li>
+                            <li><img src="project_1/images/sponsors/footer-member-issa-logo.png"></li>
+                            <li><img src="project_1/images/sponsors/footer-stop-drowning-now-logo.png"></li>
+                        </ul>
+                    </div>
+                    <div class="copy">
+                        &copy; Splashes. <br> All Right Reserved
+                    </div>
+                </div>
+            </footer>
+            <!-- Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        </body>
+        
+        </html>

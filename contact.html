@@ -21,7 +21,7 @@ header {
 .header-image {
         position: relative;
     }
- .header-image img {
+.header-image img {
         display: block;
         width: 100%;
         height: auto;
@@ -36,17 +36,11 @@ header {
         color: white;
         width: 100%;
     }
-/*.header-content h1 {
-        font-size: 36px;
-        /*background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
-        padding: 20px; /* Padding around the text */
-    } 
-
 header img {
     width: 100%;
     height: auto;
 }
-.container {
+.p-container {
         text-align: center;
         margin-top: 20px; /* Add space between header and paragraph */
     }
@@ -62,6 +56,7 @@ header img {
     height: auto;
     padding-bottom: 40px;
 }
+/*Primary Navigation Styles*/
 .nav-container {
     position: fixed;
     top: 0;
@@ -72,7 +67,7 @@ header img {
     z-index: 1000;
 }
 
-nav { /* words*/
+.nav-primary { /* words*/
     font-family:Arial, Helvetica, sans-serif;
     position: fixed;
     top: 0;
@@ -81,12 +76,12 @@ nav { /* words*/
     max-width: 1280px;
     margin: 0 auto;
     padding: 20px 40px 20px 150px;
-    /*background-color: rgba(51, 52, 53, 0.8); /* Adjust background color and transparency as needed */
+    /*background-color: rgba(51, 52, 53, 0.8);  Adjust background color and transparency as needed */
     z-index: 1000;
     
 }
 
-nav ul {
+.nav-primary ul {
     list-style-type: none; /* Remove default list styles */
     margin: 0; /* Remove default margin */
     padding: 0px 80px 80px; /* Remove default padding */
@@ -94,35 +89,88 @@ nav ul {
     justify-content: space-around; /* Distribute items horizontally */
 }
 
-nav ul li {
+.nav-primary ul li {
     margin-right: 80px; /* Adjust margin-right to reduce spacing between list items */
 }
 
 
-
-nav ul li a {
+.nav-primary ul li a {
     color: #fff; /* Text color of the navigation links */
     text-decoration: none; /* Remove underline from the links */
     font-size: 10px; /* Font size of the links */
 }
-nav ul li a span {
+.nav-primary ul li a span {
     padding: 8px 16px; /* Add padding to create button-like appearance */
     border: 2px solid #fff; /* Add border */
     border-radius: 4px; /* Add border radius for rounded corners */
 }
-nav ul li a:hover {
+.nav-primary ul li a:hover {
     text-decoration: underline; /* Underline the link on hover */
 }
-.register-sign-in { /*button*/
+.nav-primary .register-sign-in{ /*button*/
     background-color: white;
     color: blue;
     padding: 8px 16px; /* Adjust padding to your preference */
     border-radius: 20px; /* Add border radius for rounded corners */
     border: none;
 }
-.register-sign-in span {
+.nav-primary .register-sign-in span {
     border: none; /* Remove border from the span element */
 }
+
+/* Media Query for mobile screens */
+@media screen and (max-width: 576px) {
+            .nav-container {
+                padding: 20px;
+            }
+
+            .nav-primary ul {
+                padding: 0;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-primary ul li {
+                margin: 10px 0;
+            }
+
+            .header-content h1 {
+                font-size: 2em;
+            }
+
+            .logo img {
+                width: 100px; /* Adjust size as needed */
+            }
+        }
+
+        /* Media Query for medium screens */
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .nav-primary ul {
+                padding: 0;
+                justify-content: center;
+            }
+
+            .nav-primary ul li {
+                margin: 0 20px;
+            }
+        }
+
+        /* Media Query for desktop screens */
+        @media screen and (min-width: 993px) {
+            .header {
+                min-height: 400px; /* Adjust height as needed */
+                background-size: 1500px;
+            }
+
+            .nav-primary ul {
+                padding: 0;
+                justify-content: space-around;
+            }
+
+            .nav-primary ul li {
+                margin: 0;
+            }
+        }
 /*icons*/
 
 .image-grid {
@@ -255,7 +303,7 @@ html, body {
         <div class="header-content">
             <h1>Contact Us</h1>
         </div>  
-        <nav>
+        <nav class="nav-primary">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#swimming-lessons">Swimming Lessons</a></li>
@@ -268,7 +316,7 @@ html, body {
         </nav>      
     </header>
    
-    <div class="container">
+    <div class="p-container">
         <p>We'd love to help. Send us an email using one of the buttons below and <br> a representative will get back to you as soon as possible.</p>
          <section>
         <div class="image-grid">
@@ -371,6 +419,16 @@ html, body {
             </ul>
         </div>
     </div>
+    <nav class="footer-menu">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="register.html">Register/Sign In</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+    </nav>
     
    <hr class="horizontal-line">
     <div class="partner-icons">
