@@ -6,120 +6,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <!-- Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /*index header*/
- /*index header*/
- 
- .main-header-image {
-        position: relative;
-    }
-.main-header-image img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
+        /*index header*/
 
-.main-header-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: white;
-        width: 100%;
-    }
-.main-header img {
-    width: 100%;
-    height: auto;
-}
-.p-container {
-        text-align: center;
-        margin-top: 20px; /* Add space between header and paragraph */
-    }
-/*button within image*/
-.buttons-container {
-    position: absolute;
-    top: 55%; /* Adjust this value to position the buttons lower */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-   
-}
-.btn-custom {
-    background-color: white;
-    color: #37dde0;
-    padding: 8px 16px; /* Adjust padding to your preference */
-    border-radius: 20px; /* Add border radius for rounded corners */
-    border: none;
-}
-.buttons-container h1 {
-    color: white;
-}
-/*Primary Navigation Styles*/
-.nav-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 20px 40px 150px;
-    background-color: rgba(51, 52, 53, 0.8); /* Adjust background color and transparency as needed */
-    z-index: 1000;
-}
+        .main-header-image {
+            position: relative;
+        }
 
-.nav-primary { /* words*/
-    font-family:Arial, Helvetica, sans-serif;
-    position: fixed;
-    top: 0;
-    left: 0; 
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 20px 40px 20px 150px;
-    /*background-color: rgba(51, 52, 53, 0.8);  Adjust background color and transparency as needed */
-    z-index: 1000;
-    
-}
+        .main-header-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
 
-.nav-primary ul {
-    list-style-type: none; /* Remove default list styles */
-    margin: 0; /* Remove default margin */
-    padding: 0px 80px 80px; /* Remove default padding */
-    display: flex; /* Make the list items flex items */
-    justify-content: space-around; /* Distribute items horizontally */
-}
+        .main-header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
 
-.nav-primary ul li {
-    margin-right: 80px; /* Adjust margin-right to reduce spacing between list items */
-}
+        .main-header img {
+            width: 100%;
+            height: auto;
+        }
+
+        .p-container {
+            text-align: center;
+            margin-top: 20px;
+            /* Add space between header and paragraph */
+        }
+
+        /*button within image*/
+        .buttons-container {
+            position: absolute;
+            top: 55%;
+            /* Adjust this value to position the buttons lower */
+            left: 50%;
+            transform: translate(-50%, -50%);
 
 
-.nav-primary ul li a {
-    color: #fff; /* Text color of the navigation links */
-    text-decoration: none; /* Remove underline from the links */
-    font-size: 10px; /* Font size of the links */
-}
-.nav-primary ul li a span {
-    padding: 8px 16px; /* Add padding to create button-like appearance */
-    border: 2px solid #fff; /* Add border */
-    border-radius: 4px; /* Add border radius for rounded corners */
-}
-.nav-primary ul li a:hover {
-    text-decoration: underline; /* Underline the link on hover */
-}
-.nav-primary .register-sign-in{ /*button*/
-    background-color: white;
-    color: blue;
-    padding: 8px 16px; /* Adjust padding to your preference */
-    border-radius: 20px; /* Add border radius for rounded corners */
-    border: none;
-}
-.nav-primary .register-sign-in span {
-    border: none; /* Remove border from the span element */
-}
-/* Media Query for mobile screens */
-@media screen and (max-width: 576px) {
+        }
+
+        .btn-custom {
+            background-color: white;
+            color: #37dde0;
+            padding: 8px 16px;
+            /* Adjust padding to your preference */
+            border-radius: 20px;
+            /* Add border radius for rounded corners */
+            border: none;
+        }
+
+        .buttons-container h1 {
+            color: white;
+        }
+
+        /*Primary Navigation Styles*/
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 20px 40px 150px;
+            background-color: rgba(51, 52, 53, 0.8);
+            /* Adjust background color and transparency as needed */
+            z-index: 1000;
+        }
+
+        .nav-primary {
+            /* words*/
+            font-family: Arial, Helvetica, sans-serif;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 20px 40px 20px 150px;
+            /*background-color: rgba(51, 52, 53, 0.8);  Adjust background color and transparency as needed */
+            z-index: 1000;
+
+        }
+
+        .nav-primary ul {
+            list-style-type: none;
+            /* Remove default list styles */
+            margin: 0;
+            /* Remove default margin */
+            padding: 0px 80px 80px;
+            /* Remove default padding */
+            display: flex;
+            /* Make the list items flex items */
+            justify-content: space-around;
+            /* Distribute items horizontally */
+        }
+
+        .nav-primary ul li {
+            margin-right: 80px;
+            /* Adjust margin-right to reduce spacing between list items */
+        }
+
+
+        .nav-primary ul li a {
+            color: #fff;
+            /* Text color of the navigation links */
+            text-decoration: none;
+            /* Remove underline from the links */
+            font-size: 10px;
+            /* Font size of the links */
+        }
+
+        .nav-primary ul li a span {
+            padding: 8px 16px;
+            /* Add padding to create button-like appearance */
+            border: 2px solid #fff;
+            /* Add border */
+            border-radius: 4px;
+            /* Add border radius for rounded corners */
+        }
+
+        .nav-primary ul li a:hover {
+            text-decoration: underline;
+            /* Underline the link on hover */
+        }
+
+        .nav-primary .register-sign-in {
+            /*button*/
+            background-color: white;
+            color: blue;
+            padding: 8px 16px;
+            /* Adjust padding to your preference */
+            border-radius: 20px;
+            /* Add border radius for rounded corners */
+            border: none;
+        }
+
+        .nav-primary .register-sign-in span {
+            border: none;
+            /* Remove border from the span element */
+        }
+
+        /* Media Query for mobile screens */
+        @media screen and (max-width: 576px) {
             .nav-container {
                 padding: 20px;
             }
@@ -139,7 +174,8 @@
             }
 
             .logo img {
-                width: 100px; /* Adjust size as needed */
+                width: 100px;
+                /* Adjust size as needed */
             }
         }
 
@@ -158,7 +194,8 @@
         /* Media Query for desktop screens */
         @media screen and (min-width: 993px) {
             .header {
-                min-height: 400px; /* Adjust height as needed */
+                min-height: 400px;
+                /* Adjust height as needed */
                 background-size: 1500px;
             }
 
@@ -172,19 +209,123 @@
             }
         }
 
-/*header logo*/
-.logo {
-    position: absolute;
-    top: 1px;
-    left: 20px;
-    right: 20px;
-    z-index: 1001;
-}
-.logo img { /*fish with splashes*/
-    width: 175px;
-    height: auto;
-    padding-bottom: 40px;
-}
+        /*header logo*/
+        .logo {
+            position: absolute;
+            top: 1px;
+            left: 20px;
+            right: 20px;
+            z-index: 1001;
+        }
+
+        .logo img {
+            /*fish with splashes*/
+            width: 175px;
+            height: auto;
+            padding-bottom: 40px;
+        }
+
+
+        /* Main content */
+        p, h3 {
+            font-family: "open sans";
+            font-size: 16px;
+            line-height: 2em;
+        }
+        p a {
+            text-decoration: underline;
+            color: black;
+        }
+        h3 {
+            font-weight: bolder;
+        }
+        h1, h2 {
+            font-family: "Bodoni Moda";
+        }
+        h1 {
+            font-size: 72pt;
+            font-weight: bolder;
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: 800;
+        }
+        #banners img {
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:30px;
+            margin-bottom:30px;
+            width:80%;
+        }
+        #home1 {
+            background-image: url('project_1/images/home-hands-on-teaching.jpeg');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            padding-top: 10%;
+        }
+        #home1content {
+            width: 20%;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: relative;
+            bottom: 100px;
+        }
+        #home1content h2, #home1content h3, #home1content p, #home1content ul {
+           margin-bottom: 30px;
+        }
+        #home1content ul p {
+            margin-bottom: 5px;
+        }
+        .bluebtn {
+            background-color: #03b1f4;
+            padding: 8px 16px;
+            /* Adjust padding to your preference */
+            border-radius: 20px;
+            /* Add border radius for rounded corners */
+            border: none;
+            width:300px;
+            color: white;
+            position: relative;
+            left:200px;
+            text-align: center;
+        }
+        .bluebtn:hover {
+            text-decoration: none;
+        }
+        #home2 {
+            background-image:  url('Project_1/images/home-our-locations-map.png'), url('Project_1/images/home-our-locations-bg.jpeg');
+            background-size: 50% auto, 100% auto;
+            background-repeat: no-repeat;
+            background-position: right, left;
+            padding-top: 10%;
+        }
+        #home2content {
+            text-align: center;
+            color: white;
+            width: 25%;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: relative;
+            bottom: 100px;
+        }
+        #home2content h1, #home2content h2, #home2content p {
+           margin-bottom: 50px;
+        }
+        #awards h1{
+            margin-top: 5%;
+            text-align: center;
+        }
+        #awards ul {
+            list-style-type:none;
+            margin-left: 25%;
+            margin-right: 25%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #awards ul li{
+            margin: 5%;
+        }
     </style>
 </head>
 
@@ -193,7 +334,7 @@
         <!-- Your header image -->
         <div class="header-image-container text-center">
             <img src="project_1/images/home.jpeg" alt="Header Image" class="header-image">
-            
+
             <!-- Buttons container -->
             <div class="buttons-container">
                 <h1>Learning it the Right Way, Right from the Beginning</h1>
@@ -202,9 +343,9 @@
             </div>
         </div>
     </header>
-        
-       <!-- Navigation -->
-       <header class="header content">
+
+    <!-- Navigation -->
+    <header class="header content">
         <div class="nav-container">
             <div class="main-header">
                 <div class="logo">
@@ -212,7 +353,7 @@
                 </div>
             </div>
         </div>
-        
+
         <nav class="nav-primary">
             <ul>
                 <li><a href="#about">About</a></li>
@@ -223,16 +364,18 @@
                 <li><a href="#contact-us">Contact Us</a></li>
                 <li><a href="#register-sign-in" class="register-sign-in"><span>Register/Sign In</span></a></li>
             </ul>
-        </nav>      
+        </nav>
     </header>
-      
-        
 
-    <section id="home1" style="background-image: url('project_1/images/home-hands-on-teaching.jpeg');">
+    <div id="banners">
         <a href="index.html"><img src="project_1/images/register-online-here-banner.png" alt="Register online"></a>
         <a href="index.html"><img src="project_1/images/ww-site-hiring-banner-resized.png" alt="Now hiring"></a>
+    </div>
+
+    <section id="home1">
+        <div id="home1content">
         <h2>Hands On Teaching</h2>
-        <p>Splashes Aquatics Swim School provides high quality swim instruction and the ideal environment for
+        <p>Splashes Swim School provides high quality swim instruction and the ideal environment for
             learning how
             to swim. Our swim instructors use specialized “muscle memory” teaching techniques that help our students
             progress at a quick rate. Grouped by age and ability, our students benefit from swim classes that offer
@@ -249,19 +392,22 @@
             select a
             location below.</p>
         <p>Ready to sign up?</p>
-        <div class="bluebtn"><a href="register.html">REGISTER NOW</a></div>
+        <a href="register.html"><div class="bluebtn">REGISTER NOW</div></a>
+    </div>
     </section>
 
-    <section id="home2"
-        style="background-image: url('Project_1/images/home-our-locations-bg.jpeg'), url('Project_1/images/home-our-locations-map.jpeg');">
+    <section id="home2">
+        <div id="home2content">
         <h1>Find a Splashes Swim School near you</h1>
         <h2>Family Swim School Locations</h2>
         <p>Splashes Aquatics offers the finest professional swimming lessons from 21 swim schools and aquatic
             centers in California and Denver.</p>
-        <div class="bluebtn"><a href="register.html">Find a Location Near You</a></div>
+            <a href="register.html"><div class="bluebtn">Find a Location Near You</div></a>
+    </div>
     </section>
 
     <section id="awards">
+        
         <h1>Awards We've Won</h1>
         <!-- Use Javascript to display awards? -->
         <ul>
@@ -272,8 +418,8 @@
             <li><img src="project_1/images/awards/website-parenting-oc-2019.jpeg"></li>
             <li><img src="project_1/images/awards/colorado-parenting-family-fav2019.jpeg"></li>
             <li><img src="project_1/images/awards/bay-area-parent-2019.jpeg"></li>
-            <li><img src="project_1/images/awards/gold-daisy-award-finalist-2018.jpeg"></li>
             <li><img src="project_1/images/awards/best-of-la-kids-winner.jpeg"></li>
+            <li><img src="project_1/images/awards/gold-daisy-award-finalist-2018.jpeg"></li>
             <li><img src="project_1/images/awards/best-of-the-best-2018.jpeg"></li>
         </ul>
     </section>
@@ -337,9 +483,9 @@
         </div>
     </footer>
     <!-- Bootstrap JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 

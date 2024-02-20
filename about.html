@@ -176,6 +176,109 @@ header img {
                 margin: 0;
             }
         }
+
+        /* Main content */
+        p, h3 {
+            font-family: "open sans";
+            font-size: 16px;
+            line-height: 2em;
+        }
+        p a {
+            text-decoration: underline;
+            color: black;
+        }
+        h3 {
+            font-weight: bolder;
+        }
+        h1, h2 {
+            font-family: "Bodoni Moda";
+        }
+        h1 {
+            font-size: 72pt;
+            font-weight: bolder;
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: 800;
+        }
+        #banners img {
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:30px;
+            margin-bottom:30px;
+            width:80%;
+        }
+        #about1 {
+            background-image: url('project_1/images/about-our-philosophy-bg.jpeg');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: 10%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        #about1content {
+            text-align: center;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            bottom: 100px;
+        }
+        #about1content h2, #about1content h3, #about1content p, #about1content ul {
+           margin-bottom: 30px;
+        }
+        #about1content ul p {
+            margin-bottom: 5px;
+        }
+        .bluebtn {
+            background-color: #03b1f4;
+            padding: 8px 16px;
+            /* Adjust padding to your preference */
+            border-radius: 20px;
+            /* Add border radius for rounded corners */
+            border: none;
+            width:300px;
+            color: white;
+            position: relative;
+            left:200px;
+            text-align: center;
+        }
+        .bluebtn:hover {
+            text-decoration: none;
+        }
+        #about2 {
+            background-image: url('Project_1/images/home-our-locations-bg.png'), url('Project_1/images/about-we-do-a-pretty-good-job-bg.jpeg');
+            background-size: 50% auto, 100% auto;
+            background-repeat: no-repeat;
+            background-position: right, left;
+            padding-top: 10%;
+        }
+        #about2content {
+            text-align: center;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            bottom: 100px;
+        }
+        #about2content h1, #about2content h2, #about2content p {
+           margin-bottom: 50px;
+        }
+        #awards h1{
+            margin-top: 5%;
+            text-align: center;
+        }
+        #awards ul {
+            list-style-type:none;
+            margin-left: 25%;
+            margin-right: 25%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #awards ul li{
+            margin: 5%;
+        }
     </style>
 </head>
 
@@ -207,17 +310,20 @@ header img {
         </div>    
     </header>
 
-    <section id="about1" style="background-image: url('project_1/images/about-our-philosophy-bg.jpeg');">
+    <section id="about1">
+        <div id="about1content">
         <h1>Our Philosophy</h2>
         <p>Our mission is to educate and motivate individuals to be safer and learn proper swimming technique.</p>
         <p>We have chosen to share our love of swimming with children and believe there is a swimmer in every child. We pride ourselves on teaching the necessary skills needed to become a comfortable, proficient swimmer right from the beginning.</p>
+    </div>
     </section>
 
-    <section id="about2"
-        style="background-image: url('Project_1/images/home-our-locations-bg.jpeg'), url('Project_1/images/about-we-do-a-pretty-good-job-bg.jpeg');">
+    <section id="about2">
+        <div id="about2content">
         <h1>We Do A Pretty Good Job</h1>
         <p>Experience excellence through Splashes’ award-winning programs where safety, fast progress, and a fun environment come first. Join the swim school that loves what they do and it shows.</p>
         <a href="#">Hear What Families are Saying About Us</a>
+    </div>
     </section>
 
     <section id="awards">
