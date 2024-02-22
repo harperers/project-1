@@ -212,6 +212,10 @@ nav {
     padding: 35px 0;
 }
 
+.splash-site-footer .footer-contact a {
+    color: black;
+}
+
 .splash-site-footer .footer-part-two {
     width: 80%;
 }

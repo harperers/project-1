@@ -1,0 +1,45 @@
+p,
+h3 {
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 2em;
+}
+
+a {
+    text-decoration: underline;
+    color: #03b1f4;
+}
+
+h3 {
+    font-weight:900;
+}
+
+h1,
+h2 {
+    font-family: "Bodoni Moda";
+}
+
+h1 {
+    font-size: 72pt;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#swimprograms {
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#swimprograms-2 {
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 2em
+    ;
+}
