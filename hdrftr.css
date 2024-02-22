@@ -1,0 +1,256 @@
+/* -------------------- Start of Header -------------------- */
+:root {
+    --blue: #03b1f4;
+    --white: #ffffff;
+    --light-grey: #e4e4e4;
+    --black: #1a2e38;
+    --dark-grey: #444444;
+    --grey: #757576;
+}
+
+main {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    width: 100%;
+    min-height: 275px;
+}
+
+nav {
+    position: relative;
+}
+
+#nav-bar {
+    background-color: rgba(26, 46, 56, 0.9);
+    font-size: 14px;
+}
+
+#navbarContent {
+    justify-content: space-around;
+}
+
+#navbarContent .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+}
+
+/*Toggle this when nav is active*/
+.dropdown {
+    position: initial;
+}
+
+.dropdown-menu {
+    width: 90%;
+    margin: auto;
+    top: 65%;
+    left: 5%;
+    border: none;
+}
+
+.highlight {
+    background-color: white;
+    color: black !important;
+    font-weight: 500 !important;
+}
+
+#navbarContent #register-btn {
+    color: #03b1f4;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+/* Change the color in the stroke property of the hamburger menu */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,165,0)' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    cursor: pointer;
+}
+
+#locations-list {
+    padding: 0px 20px;
+}
+
+#locations-list ul li {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 0;
+}
+
+#locations-list ul li a {
+    color: #03b1f4;
+}
+
+/* Customized for signin card */
+@media all and (max-width: 769px) {
+    #signin-card {
+        width: 80% !important;
+    }
+
+    #signin #btn-group #signin-btn {
+        margin-bottom: 10px;
+    }
+}
+
+/* For screen sizes x-small and under */
+@media all and (max-width: 575px) {
+    #locations-list .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For screen sizes large and under */
+@media all and (max-width: 1199px) {
+    .custom-class {
+        /* To expand the button to full width in hamburger menu mode */
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #locations-list {
+        padding-top: 10px !important;
+    }
+
+    #locations-list div h6 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 12px !important;
+    }
+
+    #locations-list .row .col-sm-6 {
+        margin-bottom: 12px !important;
+    }
+
+    #navbarContent #register-btn {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    #navbarContent .navbar-nav .nav-item .nav-link {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #navbarContent #register-btn {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media all and (min-width: 1200px) {
+    #locations-list .row .col-sm-6 ul #sf-text {
+        width: 265px;
+    }
+
+    #signin-card {
+        width: 60% !important;
+    }
+}
+
+/* -------------------- End of Header -------------------- */
+
+/* -------------------- Start of Footer -------------------- */
+.splash-site-footer {
+    background: no-repeat var(--light-grey) url("/Project_1/images/footer-bg.jpeg") center;
+    background-size: cover;
+    padding-bottom: 150px;
+    padding-top: 20px;
+}
+
+.splash-site-footer .footer-part-one {
+    align-items: center;
+}
+
+.splash-site-footer .footer-logo {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.splash-site-footer .footer-part-one .navbar {
+    text-decoration: underline;
+    justify-content: center;
+}
+
+.splash-site-footer .footer-part-one .nav-link {
+    color: black;
+    font-weight: 600;
+}
+
+.splash-site-footer .icon-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.splash-site-footer .icon-wrapper a {
+    cursor: pointer;
+}
+
+.splash-site-footer .footer-contact-container,
+.splash-site-footer .foot-part-two-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.splash-site-footer .footer-contact {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding: 35px 0;
+}
+
+.splash-site-footer .footer-part-two {
+    width: 80%;
+}
+
+.splash-site-footer .footer-part-two .sponsors-logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.splash-site-footer .footer-part-two .sponsors-logo>div:not(:last-child) {
+    margin-right: 20px;
+}
+
+.splash-site-footer .footer-part-two .copyright {
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+    .splash-site-footer .footer-contact {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .splash-site-footer .footer-contact>div:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .splash-site-footer .icon-wrapper a:first-child {
+        margin: 0 !important;
+    }
+
+    .splash-site-footer .footer-part-two .copyright {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .splash-site-footer .footer-part-two .sponsors-logo>div:last-child {
+        margin: auto;
+    }
+}
+
+/* -------------------- End of Footer -------------------- */

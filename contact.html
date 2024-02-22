@@ -2,433 +2,143 @@
 <html lang="en">
 
 <head>
-    <title>Splashes Contact</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="cstyle.css">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        header {
-            position: relative;
-            width: 100%;
-            min-height: 400px;
-            padding-top: 3em;
-            background: no-repeat lightgrey url(project_1/images/contact-hero.jpeg);
-            background-size: 1500px;
-            /*background: no-repeat lightgrey url(images/contact-hero.jpeg);
-    background-size: 1550px;*/
-
-        }
-
-        .header-image {
-            position: relative;
-        }
-
-        .header-image img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .header-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            width: 100%;
-        }
-
-        header img {
-            width: 100%;
-            height: auto;
-        }
-
-        .p-container {
-            text-align: center;
-            margin-top: 20px;
-            /* Add space between header and paragraph */
-        }
-
-        .logo {
-            position: absolute;
-            top: 1px;
-            left: 20px;
-            right: 20px;
-            z-index: 1001;
-        }
-
-        .logo img {
-            /*fish with splashes*/
-            width: 175px;
-            height: auto;
-            padding-bottom: 40px;
-        }
-
-        /*Primary Navigation Styles*/
-        .nav-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 20px 20px 40px 150px;
-            background-color: rgba(51, 52, 53, 0.8);
-            /* Adjust background color and transparency as needed */
-            z-index: 1000;
-        }
-
-        .nav-primary {
-            /* words*/
-            font-family: Arial, Helvetica, sans-serif;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 20px 40px 20px 150px;
-            /*background-color: rgba(51, 52, 53, 0.8);  Adjust background color and transparency as needed */
-            z-index: 1000;
-
-        }
-
-        .nav-primary ul {
-            list-style-type: none;
-            /* Remove default list styles */
-            margin: 0;
-            /* Remove default margin */
-            padding: 0px 80px 80px;
-            /* Remove default padding */
-            display: flex;
-            /* Make the list items flex items */
-            justify-content: space-around;
-            /* Distribute items horizontally */
-        }
-
-        .nav-primary ul li {
-            margin-right: 80px;
-            /* Adjust margin-right to reduce spacing between list items */
-        }
-
-
-        .nav-primary ul li a {
-            color: #fff;
-            /* Text color of the navigation links */
-            text-decoration: none;
-            /* Remove underline from the links */
-            font-size: 10px;
-            /* Font size of the links */
-        }
-
-        .nav-primary ul li a span {
-            padding: 8px 16px;
-            /* Add padding to create button-like appearance */
-            border: 2px solid #fff;
-            /* Add border */
-            border-radius: 4px;
-            /* Add border radius for rounded corners */
-        }
-
-        .nav-primary ul li a:hover {
-            text-decoration: underline;
-            /* Underline the link on hover */
-        }
-
-        .nav-primary .register-sign-in {
-            /*button*/
-            background-color: white;
-            color: blue;
-            padding: 8px 16px;
-            /* Adjust padding to your preference */
-            border-radius: 20px;
-            /* Add border radius for rounded corners */
-            border: none;
-        }
-
-        .nav-primary .register-sign-in span {
-            border: none;
-            /* Remove border from the span element */
-        }
-
-        /* Media Query for mobile screens */
-        @media screen and (max-width: 576px) {
-            .nav-container {
-                padding: 20px;
-            }
-
-            .nav-primary ul {
-                padding: 0;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .nav-primary ul li {
-                margin: 10px 0;
-            }
-
-            .header-content h1 {
-                font-size: 2em;
-            }
-
-            .logo img {
-                width: 100px;
-                /* Adjust size as needed */
-            }
-        }
-
-        /* Media Query for medium screens */
-        @media screen and (min-width: 577px) and (max-width: 992px) {
-            .nav-primary ul {
-                padding: 0;
-                justify-content: center;
-            }
-
-            .nav-primary ul li {
-                margin: 0 20px;
-            }
-        }
-
-        /* Media Query for desktop screens */
-        @media screen and (min-width: 993px) {
-            .header {
-                min-height: 400px;
-                /* Adjust height as needed */
-                background-size: 1500px;
-            }
-
-            .nav-primary ul {
-                padding: 0;
-                justify-content: space-around;
-            }
-
-            .nav-primary ul li {
-                margin: 0;
-            }
-        }
-
-        /*icons*/
-
-        .image-grid {
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: 25%;
-            margin-right: 25%;
-        }
-
-        .image-container {
-            width: 25%;
-            /* Each image container takes up 25% of the container's width, allowing 4 images in each row */
-            padding: 10px;
-            /* Add spacing between images */
-            box-sizing: border-box;
-            /* Ensure padding doesn't affect the width */
-            text-align: center;
-            /* Center the content horizontally */
-            padding: -600px;
-            /*space between images*/
-            margin-top: 50px;
-
-        }
-
-        .image-container img {
-            max-width: 100%;
-            /* Ensure images don't exceed container width */
-            height: auto;
-            /* Maintain aspect ratio */
-            max-height: 160px;
-            /* Set a maximum height for all images */
-            box-shadow: 0 0 0 2px rgb(244, 244, 238);
-
-        }
-
-        /*additional locations*/
-        .additional-locations {
-            margin-top: 500px;
-            /* Adjust the margin-top value as needed */
-        }
-
-        .additional-locations ul {
-            list-style: none;
-            /* Remove default list styles */
-            padding: 0;
-            /* Remove default padding */
-            margin: 0;
-            /* Remove default margin */
-        }
-
-        .additional-locations ul li {
-            display: inline-block;
-            /* Display list items as inline-block */
-            margin-right: 20px;
-            /* Add spacing between list items */
-        }
-
-        .additional-locations ul li:last-child {
-            margin-right: 0;
-            /* Remove margin from the last list item */
-        }
-
-        /*Partners*/
-        .partner-icons {
-            margin-top: 500px;
-            /* Add some spacing between the additional locations and partner icons */
-            margin-left: 50px;
-            text-align: left;
-
-        }
-
-        .partner-icon {
-            display: inline-block;
-            /* Display partner icons as inline-block */
-            margin-right: 20px;
-            /* Add spacing between partner icons */
-        }
-
-        .partner-icon img {
-            width: 50px;
-            /* Set a specific width for the partner icons */
-            height: auto;
-            /* Maintain aspect ratio */
-        }
-
-        .partner-icon:last-child {
-            margin-right: 0;
-            /* Remove margin from the last partner icon */
-        }
-
-        /*slashes footer logo*/
-        .wave-img {
-            position: relative;
-            top: 100px;
-            /* Adjust this value to move the image up or down */
-            left: 10%;
-            /* Center the image horizontally */
-            transform: translateX(-50%);
-            /* Center the image horizontally */
-            z-index: 1;
-            /* Ensure the wave image appears over the footer image */
-        }
-
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        .footer {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            margin-top: auto;
-            /* Push the footer to the bottom of the page */
-        }
-
-        .footer-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            /* Ensure the image is behind other content */
-        }
-
-        #copyright {
-            text-align: right;
-            padding-bottom: 100px;
-            margin-right: 50px;
-            margin-top: -50px;
-        }
-
-        .horizontal-line {
-            border: none;
-            /* Remove default border */
-            border-top: 2px solid rgb(205, 198, 198);
-            /* Set top border with desired thickness and color */
-            width: 90%;
-            /* Set width to 90% of the container's width */
-            margin: 0 auto;
-            /* Center the horizontal line */
-        }
-
-        /*social media icons*/
-        .social {
-            display: flex;
-            justify-content: center;
-            /* Align icons horizontally at the center */
-        }
-
-        .social a {
-            display: inline-block;
-            margin: 0 10px;
-            /* Add some spacing between icons */
-            font-size: 24px;
-            /* Adjust the icon size */
-            color: #333;
-            /* Adjust the icon color */
-        }
-
-        /* Main content */
-        p,
-        h3 {
-            font-family: "open sans";
-            font-size: 16px;
-            line-height: 2em;
-        }
-
-        p a {
-            text-decoration: underline;
-            color: black;
-        }
-
-        h3 {
-            font-weight: bolder;
-        }
-
-        h1,
-        h2 {
-            font-family: "Bodoni Moda";
-        }
-
-        h1 {
-            font-size: 72pt;
-            font-weight: bolder;
-        }
-
-        h2 {
-            font-size: 32px;
-            font-weight: 800;
-        }
-    </style>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Splash frontend project" />
+    <meta name="author" content="Miao Shi, Vibhuti Trivedi, Jordan VonBorstel, Xu Chen" />
+    <title>Contact</title>
+    <!-- SEO enhancement -->
+    <meta property="og:title" content="About" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="splash.com" />
+    <meta property="og:description" content="Splash frontend project." />
+    <meta property="og:image" content="/Project_1/project_1/images/*" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Customer CSS -->
+    <link href="./styles-contact.css" rel="stylesheet" />
+    <link href="./hdrftr.css" rel="stylesheet" />
+    <!-- Font-awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
-    <header class="header content">
-        <div class="nav-container">
-            <div class="main-header">
-                <div class="logo">
-                    <img src="Project_1\images\logo-small.png" alt="Splashes Logo" width="125" height="100">
-                </div>
-            </div>
-        </div>
-        <div class="header-content">
-            <h1>Contact Us</h1>
-        </div>
-        <nav class="nav-primary">
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="swimlessons.html">Swimming Lessons</a></li>
-                <li><a href="swimprograms.html">Swim Programs</a></li>
-                <li><a href="adultprograms.html">Adult Programs</a></li>
-                <li><a href="locations.html">Locations</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="signin-up.html" class="register-sign-in"><span>Register/Sign In</span></a></li>
+<body id="contact">
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top" id="nav-bar">
+        <a class="navbar-brand pl-4 pt-0" href="index.html">
+            <img src="project_1/images/logo-small.png" alt="Splashes Logo" width="250" height="auto">
+        </a>
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mb-2">
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="swimlessons.html">Swimming Lessons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="swimprograms.html">Swim Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="adultprograms.html">Adult Programs</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Locations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="text-center text-md-left" id="locations-list">
+                            <div class="row text-left">
+                                <div class="col-sm-6 col-xl-3">
+                                    <h6 class="font-weight-bold mt-3 mb-0">Orange County</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#!">Anaheim Hills @ LA Fitness</a></li>
+                                        <li><a href="#!">Huntington Beach</a></li>
+                                        <li><a href="#!">Irvine</a></li>
+                                        <li><a href="#!">Yorba Linda @ LA Fitness</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-xl-3">
+                                    <h6 class="font-weight-bold mt-3 mb-0">San Gabriel Valley</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#!">Alhambra-Fremont @ LA Fitness</a></li>
+                                        <li><a href="#!">Arcadia @ LA Fitness</a></li>
+                                        <li><a href="#!">Diamond Bar @ LA Fitness</a></li>
+                                        <li><a href="#!">Pasadena</a></li>
+                                        <li><a href="#!">West Covina @ LA Fitness</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-xl-6">
+                                    <h6 class="font-weight-bold mt-3 mb-0">Silicon Valley</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#!">North San Jose @ City Sports Club</a></li>
+                                        <li><a href="#!">San Jose-Almaden @ City Sports Club</a></li>
+                                        <li><a href="#!">San Jose-Bascom</a></li>
+                                        <li><a href="#!">San Jose-Blossom Hill @ City Sports Club</a></li>
+                                        <li><a href="#!">Sunnyvale @ City Sports Club</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-xl-3">
+                                    <h6 class="font-weight-bold mt-3 mb-0">San Diego County</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#!">Carlsbad</a></li>
+                                        <li><a href="#!">Poway @ LA Fitness</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-xl-3">
+                                    <h6 class="font-weight-bold mt-3 mb-0">Los Angeles County</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#!">Culver City @ LA Fitness</a></li>
+                                        <li><a href="#!">Harbor City @ LA Fitness</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-xl-6">
+                                    <h6 class="font-weight-bold mt-3 mb-0">Alameda County</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#!">Hayward @ City Sports Club</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-xl-6">
+                                    <h6 class="font-weight-bold mt-3 mb-0">San Francisco</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#!">San Francisco-20th Avenue @ City Sports
+                                                Club</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-xl-6">
+                                    <h6 class="font-weight-bold mt-3 mb-0">Denver</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#!">Highlands Ranch</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
             </ul>
-        </nav>
+            <a class="btn btn-primary rounded-pill bg-white border-0 px-3 custom-class" id="register-btn"
+                href="signin-up.html" role="button">
+                Register / Sign In
+            </a>
+        </div>
+    </nav>
+
+    <header id="contacct-header">
+        <div class="onimg1">
+            <h2 class="textonbabyimg1">Contact Us</h2>
+        </div>
     </header>
 
     <div class="p-container">
@@ -507,65 +217,110 @@
             </div>
         </section>
 
-
+        <footer class="splash-site-footer">
+            <div class="footer-logo">
+                <img src="./project_1/images/wave-small.png" alt="footer-logo" />
+            </div>
+            <div class="footer-part-one row mt-5">
+                <div class="col-md-6 col-12">
+                    <nav class="navbar navbar-expand">
+                        <ul class="navbar-nav nav-container">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- target top location and open -->
+                                <a class="nav-link" href="#">Locations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Register / Sign In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Careers</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-6 col-12 icon-wrapper">
+                    <a class="fa-stack" style="vertical-align: top; margin-left: 200px" href="#">
+                        <i class="fa-solid fa-circle fa-stack-2x" style="color: #055e97"></i>
+                        <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                    </a>
+                    <a class="fa-stack" style="vertical-align: top" href="#">
+                        <i class="fa-solid fa-circle fa-stack-2x" style="color: #656667"></i>
+                        <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
+                    </a>
+                    <a class="fa-stack" style="vertical-align: top" href="#">
+                        <i class="fa-solid fa-circle fa-stack-2x" style="color: #27dffd"></i>
+                        <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+                    </a>
+                    <a class="fa-stack" style="vertical-align: top" href="#">
+                        <i class="fa-solid fa-circle fa-stack-2x" style="color: #cc0c24"></i>
+                        <i class="fa-brands fa-yelp fa-stack-1x fa-inverse"></i>
+                    </a>
+                    <a class="fa-stack" style="vertical-align: top" href="#">
+                        <i class="fa-solid fa-circle fa-stack-2x" style="color: #71b4fc"></i>
+                        <i class="fa-brands fa-facebook-f fa-stack-1x fa-inverse"></i>
+                    </a>
+                    <a class="fa-stack" style="vertical-align: top" href="#">
+                        <i class="fa-solid fa-circle fa-stack-2x" style="color: #cc0c24"></i>
+                        <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-contact-container">
+                <div class="footer-contact">
+                    <div>
+                        <div>Orange County</div>
+                        <a href="tel:9494500777">(949) 450-0777</a>
+                    </div>
+                    <div>
+                        <div>San Diego County</div>
+                        <a href="tel:7606039400">(760) 603-9400</a>
+                    </div>
+                    <div>
+                        <div>Los Angeles County</div>
+                        <a href="tel:6268361200">(626) 836-1200</a>
+                    </div>
+                    <div>
+                        <div>Northern California</div>
+                        <a href="tel:4082791700">(408) 279-1700</a>
+                    </div>
+                    <div>
+                        <div>Denver</div>
+                        <a href="7203447700">(720) 344-7700</a>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-part-two-container">
+                <div class="footer-part-two row">
+                    <div class="col-sm-8 col-12 sponsors-logo">
+                        <div>
+                            <img src="./project_1/images/sponsors/footer-usssa-logo-2.png" alt="usssa-logo" />
+                        </div>
+                        <div>
+                            <img src="./project_1/images/sponsors/footer-ndpa-logo.png" alt="ndpa-logo" />
+                        </div>
+                        <div>
+                            <img src="./project_1/images/sponsors/footer-member-issa-logo.png" alt="issa-logo" />
+                        </div>
+                        <div>
+                            <img src="./project_1/images/sponsors/footer-stop-drowning-now-logo.png" alt="stop-logo" />
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-12 copyright">
+                        © 2024 Splashes.<br />
+                        All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
-<footer class="footer">
-    <img src="Images\footer-bg.jpeg" alt="Person under water" class="footer-image">
-    <img src="Images\wave-small.png" alt="Splashes fish" class="wave-img">
-    <div class="footer-content">
-        <!-- Footer content goes here -->
-        <!--Social Media Icons-->
-        <div class="social">
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-yelp"></a>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-youtube"></a>
-        </div>
-
-        <div class="additional-locations">
-            <h3></h3>
-            <hr class="horizontal-line">
-            <ul>
-                <li><a href="tel:1234567890">Orange County<br>(949) 450-0777</a></li>
-                <li><a href="tel:0987654321">San Diego<br>(760) 603-9400</a></li>
-                <li><a href="tel:1112223333">Los Angeles County<br>(626) 836-1200</a></li>
-                <li><a href="tel:4445556666">Northern California<br>(408) 279-1700</a></li>
-            </ul>
-        </div>
-    </div>
-    <nav class="footer-menu">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="register.html">Register/Sign In</a></li>
-            <li><a href="#">Careers</a></li>
-        </ul>
-    </nav>
-
-    <hr class="horizontal-line">
-    <div class="partner-icons">
-        <h3></h3>
-        <div class="partner-icon">
-            <img src="Images\footer-usssa-logo-2.png" alt="usssa logo">
-        </div>
-        <div class="partner-icon">
-            <img src="Images\footer-ndpa-logo.png" alt="ndpa logo">
-        </div>
-        <div class="partner-icon">
-            <img src="Images\footer-member-issa-logo.png" alt="issa logo">
-        </div>
-        <div class="partner-icon">
-            <img src="Images\footer-stop-drowning-now-logo.png" alt="dtop drowning logo">
-        </div>
-
-
-        <div id="copyright">
-            <p>© 2022 Splashes.<br>All rights reserved.</p>
-        </div>
-</footer>
 
 </html>
