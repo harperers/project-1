@@ -1,0 +1,151 @@
+ /* Main content */
+        p,
+        h3 {
+            font-family: "open sans";
+            font-size: 16px;
+            line-height: 2em;
+        }
+
+        p a {
+            text-decoration: underline;
+            color: black;
+        }
+
+        h3 {
+            font-weight: bolder;
+        }
+
+        h1,
+        h2 {
+            font-family: "Bodoni Moda";
+        }
+
+        h1 {
+            font-size: 72pt;
+            font-weight: bolder;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 800;
+        }
+
+        #home {
+            background: no-repeat white url(./Project_1/images/home.jpeg);
+            background-size: 100% 1000px;
+        }
+
+        #home-header {
+            min-height: 280px;
+        }
+
+        #home .textonbabyimg1 {
+            color: white;
+            text-align: center;
+            font-family: "Bodoni Moda", serif;
+            font-size: 70px;
+            font-weight: bold;
+        }
+        
+        #home .onimg1 {
+            margin-top: 120px;
+        }
+        #btn-container {
+            padding-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            color: #03b1f4;
+        }
+        #swimvenger-btn, #informational-btn {
+            color: #03b1f4;
+        }
+
+        #banners {
+            padding-top:500px;
+        }
+
+        #banners img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 80%;
+        }
+
+        #home1 {
+            background-image: url('project_1/images/home-hands-on-teaching.jpeg');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            padding-top: 10%;
+        }
+
+        #home1content {
+            width: 20%;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: relative;
+            bottom: 100px;
+        }
+
+        #home1content h2,
+        #home1content h3,
+        #home1content p,
+        #home1content ul {
+            margin-bottom: 30px;
+        }
+
+        #home1content ul p {
+            margin-bottom: 5px;
+        }
+
+        .bluebtn {
+            background-color: #03b1f4;
+            color: white;
+        }
+
+        .bluebtn:hover {
+            text-decoration: none;
+        }
+
+        #home2 {
+            background-image: url('Project_1/images/home-our-locations-map.png'), url('Project_1/images/home-our-locations-bg.jpeg');
+            background-size: 50% auto, 100% auto;
+            background-repeat: no-repeat;
+            background-position: right, left;
+            padding-top: 10%;
+        }
+
+        #home2content {
+            text-align: center;
+            color: white;
+            width: 25%;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: relative;
+            bottom: 100px;
+        }
+
+        #home2content h1,
+        #home2content h2,
+        #home2content p {
+            margin-bottom: 50px;
+        }
+
+        #awards h1 {
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        #awards ul {
+            list-style-type: none;
+            margin-left: 25%;
+            margin-right: 25%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #awards ul li {
+            margin: 5%;
+        }

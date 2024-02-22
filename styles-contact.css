@@ -1,0 +1,89 @@
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.image-container {
+    width: 25%;
+    /* Each image container takes up 25% of the container's width, allowing 4 images in each row */
+    padding: 10px;
+    /* Add spacing between images */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect the width */
+    text-align: center;
+    /* Center the content horizontally */
+    padding: -600px;
+    /*space between images*/
+    margin-top: 50px;
+
+}
+
+.image-container img {
+    max-width: 100%;
+    /* Ensure images don't exceed container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-height: 160px;
+    /* Set a maximum height for all images */
+    box-shadow: 0 0 0 2px rgb(244, 244, 238);
+
+}
+
+p,
+h3 {
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 2em;
+}
+
+p a {
+    text-decoration: underline;
+    color: black;
+}
+
+h3 {
+    font-weight: bolder;
+}
+
+h1,
+h2 {
+    font-family: "Bodoni Moda";
+}
+
+h1 {
+    font-size: 72pt;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#contact {
+    background: no-repeat white url(./Project_1/images/contact-hero.jpeg);
+    background-size: 100% 500px;
+}
+
+#contact-header {
+    min-height: 280px;
+}
+
+#contact .textonbabyimg1 {
+    color: white;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#contact .onimg1 {
+    margin-top: 120px;
+}
+
+.p-container p {
+    margin-top: 50px;
+    text-align: center;
+}
