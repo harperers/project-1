@@ -6,30 +6,16 @@
 }
 
 .image-container {
-    width: 25%;
-    /* Each image container takes up 25% of the container's width, allowing 4 images in each row */
-    padding: 10px;
-    /* Add spacing between images */
-    box-sizing: border-box;
-    /* Ensure padding doesn't affect the width */
-    text-align: center;
-    /* Center the content horizontally */
-    padding: -600px;
-    /*space between images*/
-    margin-top: 50px;
-
-}
-
-.image-container img {
-    max-width: 100%;
-    /* Ensure images don't exceed container width */
-    height: auto;
-    /* Maintain aspect ratio */
-    max-height: 160px;
-    /* Set a maximum height for all images */
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 0 0 2px rgb(244, 244, 238);
-
 }
+
+.image-container img {}
 
 p,
 h3 {
@@ -86,4 +72,67 @@ h2 {
 .p-container p {
     margin-top: 50px;
     text-align: center;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    /* border-radius: 50%; */
+}
+
+.imageText {
+    max-width: 150px;
+    height: 40px;
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+    .table-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .table-row {
+        display: grid;
+        grid-template-columns: repeat(2, 4fr);
+        grid-gap: 20px;
+    }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+    .table-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
 }
