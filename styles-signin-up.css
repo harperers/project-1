@@ -37,7 +37,7 @@ input[type="text"],
 input[type="password"] {
     width: calc(100% - 22px);
     /* email/password*/
-    background-color: rgb(207, 203, 203);
+    background-color: rgb(207, 203, 203);;
     border-radius: 5px;
 }
 
@@ -65,9 +65,6 @@ input[type="submit"] {
     margin-right: 20px;
 }
 
-.signup-btn:hover {
-    background-color: #f0f0f0;
-}
 
 label {
     text-align: left;
@@ -104,4 +101,17 @@ label {
 
 #buttons {
     display: flex;
+}
+.btn-rounded {
+    border-radius: 20px; /* Adjust the value as needed */
+}
+/* Faded out button */
+.btn-faded {
+    opacity: 0.2; /* Adjust the opacity value (between 0 and 1) */
+}
+#buttons .btn {
+   width:200px;
+}
+#password {
+    border: none;
 }
