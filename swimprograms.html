@@ -23,7 +23,8 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
-    <body>
+
+    <body id="swimprogram">
         <div id="container">
             <nav class="navbar navbar-expand-xl navbar-dark sticky-top" id="nav-bar">
                 <a class="navbar-brand pl-4 pt-0" href="index.html">
@@ -128,72 +129,53 @@
                         </li>
                     </ul>
                     <a class="btn btn-primary rounded-pill bg-white border-0 px-3 custom-class" id="register-btn"
-                        href="signin.html" role="button">
+                        href="signin-up.html" role="button">
                         Register / Sign In
                     </a>
                 </div>
             </nav>
-
-            <header id="swimlessons-header">
-                <div style="position: relative; text-align: center;">
-                    <img src="Project_1/images/summer-swim-camps.jpeg" alt="Image of kids" style="width: 100%; height: auto;">
-                    <h2 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #FFFFFF; font-family: 'Bodoni Moda', serif; font-weight: bold; font-size: 72px; margin: 0;">Summer Swim Camps</h2>
+            <header id="swimprograms-header">
+                <div class="onimg1">
+                    <h2 class="textonbabyimg1">Summer Swim Camps</h2>
                 </div>
             </header>
-            
-            <style>
-                @font-face {
-                    font-family: 'Bodoni Moda';
-                    src: url('path-to-your-font/BodoniModa-Regular.woff2') format('woff2'),
-                        url('path-to-your-font/BodoniModa-Regular.woff') format('woff');
-                    font-weight: normal;
-                    font-style: normal;
-                }
-            
-                #swimlessons-header h2 {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    color: #FFFFFF;
-                    font-family: 'Bodoni Moda', serif;
-                    font-weight: bold;
-                    font-size: 72px;
-                    margin: 0;
-                }
-            </style>
+            <p class="caption1">
+                Building Swimming Skills All Summer Long
+            </p>
 
             <main>
-                <section id="swimprograms">
-                    <h2>Building Swimming Skills All Summer Long</h2>
-                    <p>If your child is between the ages of 5 to 14 and can swim two lengths across a 25 yard pool unassisted, consider enrolling them in our summer swim camps. Splashes Aquatics summer swim camps are held weekly throughout the summer. Discounts are also available for students who enroll in three sessions or more.</p>
-                    <p>During the day, students will work with our highly qualified instructors on stroke technique, breathing, starts and turns, along with speed work. In the middle of the day, we provide students with a snack and beverage. Swim games will be run during the last 30-45 minutes of each daily session for the children to enjoy our rafts and pool toys.</p>
+                <div class="section">
+                    <section id="swimprograms">
+                        <!--<h2>Building Swimming Skills All Summer Long</h2>-->
+                        <p>If your child is between the ages of 5 to 14 and can swim two lengths across a 25 yard pool unassisted, consider enrolling them in our summer swim camps. Splashes Aquatics summer swim camps are held weekly throughout the summer. Discounts are also available for students who enroll in three sessions or more.</p>
+                        <p>During the day, students will work with our highly qualified instructors on stroke technique, breathing, starts and turns, along with speed work. In the middle of the day, we provide students with a snack and beverage. Swim games will be run during the last 30-45 minutes of each daily session for the children to enjoy our rafts and pool toys.</p>
+                    </section>
 
-                </section>
-                <section id="swimprograms-2">
-                    <h3>Find a Splashes Aquatics swim camp location near you</h3>
-                    <br>
-                    <div class="locations">
-                        <div>
-                            <a href="#">Irvine</a>
+                    <section id="swimprograms-2">
+                        <h3>Find a Splashes Aquatics swim camp location near you</h3>
+                        <br>
+                        <div class="locations">
+                            <div>
+                                <a href="#">Irvine</a>
+                            </div>
+                            <div>
+                                <a href="#">Carlsbad</a>
+                            </div>
+                            <div>
+                                <a href="#">Pasadena</a>
+                            </div>
+                            <div>
+                                <a href="#">San Jose</a>
+                            </div>
+                            <div>
+                                <a href="#">Denver/Highlands Ranch</a>
+                            </div>
                         </div>
-                        <div>
-                            <a href="#">Carlsbad</a>
-                        </div>
-                        <div>
-                            <a href="#">Pasadena</a>
-                        </div>
-                        <div>
-                            <a href="#">San Jose</a>
-                        </div>
-                        <div>
-                            <a href="#">Denver/Highlands Ranch</a>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </main>
         </div>
-
+        <!-- Footer -->
         <footer class="splash-site-footer">
             <div class="footer-logo">
                 <img src="./project_1/images/wave-small.png" alt="footer-logo" />
@@ -298,14 +280,15 @@
                 </div>
             </div>
         </footer>
-
+    
+        <!-- External JS  -->
         <script src="scripts/locations.js"></script>
-
+    
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
+    
     </body>
+
 </html>
