@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Splash frontend project" />
     <meta name="author" content="Miao Shi, Vibhuti Trivedi, Jordan VonBorstel, Xu Chen" />
-    <title>Home</title>
+    <title>Sign-in</title>
     <!-- SEO enhancement -->
     <meta property="og:title" content="Home" />
     <meta property="og:type" content="Website" />
@@ -36,16 +36,19 @@
         <form id="signin-form" action="#">
 
             <label for="email">Email*</label>
-            <input id="email" type="text" placeholder="" required><br>
+            <input id="email" type="text" class="form-control" placeholder="" required><br>
             <label for="password">Password*</label>
-            <input id="password"type="password" placeholder="" required><br>
-            <div class="forgot-password-container">
+            <input id="password" type="password" placeholder="" required><br>
+            <div class=" form-group forgot-password-container">
                 <a href="#" class="forgot-password">Forgot Password?</a>
             </div>
-            <div id="buttons">
-                <input type="submit" value="Sign Up">
-                <button class="signup-btn">Sign In</button>
+            <div id="buttons d-flex flex-column flex-md-row">
+                <button type="button" value="Sign-in" class="btn btn-info btn-lg btn-rounded mb-3 btn-faded col-md-6 col-lg-12">Sign In</button>
+                <button type="button" value="Sign Up" class="btn btn-outline-info btn-lg btn-rounded col-md-6 col-lg-12">Sign-up</button>
             </div>
+        </form>
+    </div>
+
         </form>
 
     </div>
