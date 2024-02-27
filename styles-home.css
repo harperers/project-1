@@ -1,7 +1,6 @@
  /* Main content */
         p,
         h3 {
-            font-family: "open sans";
             font-size: 16px;
             line-height: 2em;
         }
@@ -76,13 +75,13 @@
 
         #home1 {
             background-image: url('project_1/images/home-hands-on-teaching.jpeg');
-            background-size: 100% auto;
+            background-size: cover;
             background-repeat: no-repeat;
             padding-top: 10%;
         }
 
         #home1content {
-            width: 20%;
+            width: 40%;
             margin-left: 10%;
             margin-right: 10%;
             position: relative;
@@ -111,7 +110,7 @@
 
         #home2 {
             background-image: url('Project_1/images/home-our-locations-map.png'), url('Project_1/images/home-our-locations-bg.jpeg');
-            background-size: 50% auto, 100% auto;
+            background-size: 60% auto, cover;
             background-repeat: no-repeat;
             background-position: right, left;
             padding-top: 10%;
@@ -120,7 +119,7 @@
         #home2content {
             text-align: center;
             color: white;
-            width: 25%;
+            width: 40%;
             margin-left: 10%;
             margin-right: 10%;
             position: relative;
@@ -149,3 +148,30 @@
         #awards ul li {
             margin: 5%;
         }
+
+        @media screen and (max-width: 1200px) {
+            #home1content {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                bottom: 100px;
+            }
+            #home2 {
+                background-image:url('Project_1/images/home-our-locations-bg.jpeg');
+                background-size:cover;
+            }
+            #home2content {
+                text-align: center;
+                color: white;
+                width: 80%;
+                margin-left: 10%;
+                margin-right: 10%;
+                position: relative;
+                bottom: 100px;
+            }
+            #home2content h1{
+                font-size: 32px;
+            }
+        }
+          

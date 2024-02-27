@@ -52,7 +52,7 @@ p,
 
         #about1 {
             background-image: url('project_1/images/about-our-philosophy-bg.jpeg');
-            background-size: 100% auto;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: 10%;
             padding-top: 5%;
@@ -61,11 +61,10 @@ p,
 
         #about1content {
             text-align: center;
-            width: 40%;
+            width: 80%;
             margin-left: auto;
             margin-right: auto;
             position: relative;
-            bottom: 100px;
         }
 
         #about1content h2,
@@ -80,8 +79,8 @@ p,
         }
 
         #about2 {
-            background-image: url('Project_1/images/home-our-locations-bg.png'), url('Project_1/images/about-we-do-a-pretty-good-job-bg.jpeg');
-            background-size: 50% auto, 100% auto;
+            background-image:url('Project_1/images/about-we-do-a-pretty-good-job-bg.jpeg');
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: right, left;
             padding-top: 10%;
@@ -89,11 +88,10 @@ p,
 
         #about2content {
             text-align: center;
-            width: 40%;
+            width: 80%;
             margin-left: auto;
             margin-right: auto;
             position: relative;
-            bottom: 100px;
         }
 
         #about2content h1,

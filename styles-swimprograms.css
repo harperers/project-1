@@ -35,15 +35,18 @@ h2 {
     margin-bottom: 50px;
 }
 
+main {
+    width: 80%;
+}
 #swimprograms {
     margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #swimprograms-2 {
     margin-bottom: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 2em;
 }
 
