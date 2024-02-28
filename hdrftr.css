@@ -237,6 +237,7 @@ nav {
     .splash-site-footer .footer-contact {
         flex-direction: column;
         width: 90%;
+        align-items: center;
     }
 
     .splash-site-footer .footer-contact>div:not(:last-child) {
@@ -254,6 +255,12 @@ nav {
 
     .splash-site-footer .footer-part-two .sponsors-logo>div:last-child {
         margin: auto;
+    }
+
+    .splash-site-footer .footer-contact div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
