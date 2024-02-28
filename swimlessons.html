@@ -146,9 +146,9 @@
             <main>
                 <section id="swimlessons">
                     <h2>Our Lesson Types</h2>
-                    <div id="component"> <!-- Vue -->
+                    <div id="projectsplash"> <!-- Vue -->
                         <!--<h3>Private Swim Lessons</h3>-->
-                        <component></component>
+                        <projectsplash></projectsplash>
                     </div>
                     <p>Our <a href="#">private swim lessons</a> provide one-on-one instruction for students ages three months through adult. Private swim lessons are the best option for accelerated learning. Each lesson will allow our instructors to build on the momentum and skills taught in the previous lesson with minimal downtime. From the basics of putting your face into the water to refining your stroke technique, private lessons will offer the highest rate of progress. <a class="learn" href="#">Learn more here!</a></p>
 
@@ -283,12 +283,12 @@
 
         <!-- Vue -->
         <script>
-            Vue.component('component',{
+            Vue.component('projectsplash',{
                 template : '<div><h3>Private Swim Lessons</h3></div>'
             });
         
             var vm1 = new Vue({
-                el: '#component'
+                el: '#projectsplash'
             })
         </script>
     </body>
