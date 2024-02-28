@@ -90,9 +90,15 @@ p {
     #swimprogram main {
         width: 87%;
     }
+    .textonbabyimg1 {
+        font-size: 32px !important; 
+    }
 }
 @media (min-width:577px) and (max-width: 1199px) {
     #swimprogram main {
         width: 92%;
+    }
+    .textonbabyimg1 {
+        font-size: 32px !important; 
     }
 }
