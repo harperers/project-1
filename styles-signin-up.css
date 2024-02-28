@@ -15,7 +15,7 @@ body {
     /* Added background color */
     border-radius: 10px;
     /* Added border-radius to make the form square-shaped */
-    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     /* Added box-shadow for the shadow effect */
 }
 
@@ -26,17 +26,15 @@ input[type="submit"],
     width: calc(100% - 22px);
     /* Adjusted width to accommodate border and padding */
     padding: 20px;
-    /* Doubled the padding */
     margin: 5px 0;
     border-radius: 20px;
     box-sizing: border-box;
     display: inline-block;
 }
-
+ /* email/password*/
 input[type="text"],
 input[type="password"] {
     width: calc(100% - 22px);
-    /* email/password*/
     background-color: rgb(207, 203, 203);;
     border-radius: 5px;
 }
@@ -44,9 +42,12 @@ input[type="password"] {
 input[type="submit"],
 .signup-btn {
     width: calc(100% - 22px);
-    /*  */
+    
 }
-
+/*custom color for sign-in button  */
+.custom-text-color {
+    color: #fff;
+}
 input[type="submit"] {
     background-color: #37dde0;
     color: white;
@@ -63,6 +64,7 @@ input[type="submit"] {
     cursor: pointer;
     margin-left: 20px;
     margin-right: 20px;
+    
 }
 
 
@@ -93,12 +95,16 @@ label {
 }
 
 .splashwave-img {
-    position: absolute;
-    height: 100px;
-    bottom: 560px;
-    right: 125px;
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block; /* Allow positioning */
+    
 }
-
+.splashwave-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -100px;
+}
 #buttons {
     display: flex;
 }
