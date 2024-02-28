@@ -73,8 +73,20 @@ a {
 .learn {
     display: block;
 }
-main {
-    width: 90%;
-    margin-left: 50px;
+#swimlesson main {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
+@media (max-width:576px) {
+    #swimlesson main {
+        width: 87%;
+    }
+}
+@media (min-width:577px) and (max-width: 1199px) {
+    #swimlesson main {
+        width: 92%;
+    }
+}
+
 

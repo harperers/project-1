@@ -75,7 +75,7 @@ main {
     text-align: center;
 }
 #swimprogram main {
-    width: 92%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
@@ -86,5 +86,13 @@ p {
 .caption1 {
     color: #444444;
 }
-
-
+@media (max-width:576px) {
+    #swimprogram main {
+        width: 87%;
+    }
+}
+@media (min-width:577px) and (max-width: 1199px) {
+    #swimprogram main {
+        width: 92%;
+    }
+}
