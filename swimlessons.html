@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
         <!-- Latest compiled JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Vue -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 
     </head>
     
@@ -144,7 +146,10 @@
             <main>
                 <section id="swimlessons">
                     <h2>Our Lesson Types</h2>
-                    <h3 id="vueapp">Private Swim Lessons</h3>
+                    <div id="component"> <!-- Vue -->
+                        <!--<h3>Private Swim Lessons</h3>-->
+                        <component></component>
+                    </div>
                     <p>Our <a href="#">private swim lessons</a> provide one-on-one instruction for students ages three months through adult. Private swim lessons are the best option for accelerated learning. Each lesson will allow our instructors to build on the momentum and skills taught in the previous lesson with minimal downtime. From the basics of putting your face into the water to refining your stroke technique, private lessons will offer the highest rate of progress. <a class="learn" href="#">Learn more here!</a></p>
 
                     <h3>Semi-Private Swim Lessons</h3>
@@ -276,6 +281,16 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+        <!-- Vue -->
+        <script>
+            Vue.component('component',{
+                template : '<div><h3>Private Swim Lessons</h3></div>'
+            });
+        
+            var vm1 = new Vue({
+                el: '#component'
+            })
+        </script>
     </body>
     
 </html>
