@@ -147,6 +147,8 @@
 
         #awards ul li {
             margin: 5%;
+            width: 250px;
+            height:auto;
         }
 
         @media screen and (max-width: 1200px) {
@@ -155,7 +157,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 position: relative;
-                bottom: 100px;
+                bottom: 50px;
             }
             #home2 {
                 background-image:url('Project_1/images/home-our-locations-bg.jpeg');
@@ -168,7 +170,7 @@
                 margin-left: 10%;
                 margin-right: 10%;
                 position: relative;
-                bottom: 100px;
+                top:-20px;
             }
             h1{
                 font-size: 32px;
