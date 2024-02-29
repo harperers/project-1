@@ -170,8 +170,11 @@
                 position: relative;
                 bottom: 100px;
             }
-            #home2content h1{
+            h1{
                 font-size: 32px;
+            }
+            .textonbabyimg1 {
+                font-size: 32px !important; 
             }
         }
           
