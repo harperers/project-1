@@ -1,296 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Splash frontend project" />
-        <meta name="author" content="Miao Shi, Vibhuti Trivedi, Jordan VonBorstel, Xu Chen" />
-        <title>Swim Lessons</title>
-        <!-- SEO enhancement -->
-        <meta property="og:title" content="Swim lessons" />
-        <meta property="og:type" content="Website" />
-        <meta property="og:url" content="splash.com" />
-        <meta property="og:description" content="Splash frontend project." />
-        <meta property="og:image" content="/Project_1/project_1/images/*" />
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-        <!-- Customer CSS -->
-        <link href="styles-swimlessons.css" rel="stylesheet" />
-        <link href="hdrftr.css" rel="stylesheet" />
-        <!-- Font-awesome CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-        <!-- Latest compiled JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Vue -->
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 
-    </head>
-    
-    <body id="swimlesson">
-        <div id="app">
-            <nav class="navbar navbar-expand-xl navbar-dark sticky-top" id="nav-bar">
-                <a class="navbar-brand pl-4 pt-0" href="index.html">
-                    <img src="project_1/images/logo-small.png" alt="Splashes Logo" width="250" height="auto">
-                </a>
-                <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav mb-2">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="swimlessons.html">Swimming Lessons</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="swimprograms.html">Swim Programs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="adultprograms.html">Adult Programs</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Locations
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <div class="text-center text-md-left" id="locations-list">
-                                    <div class="row text-left">
-                                        <div class="col-sm-6 col-xl-3">
-                                            <h6 class="font-weight-bold mt-3 mb-0">Orange County</h6>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#!">Anaheim Hills @ LA Fitness</a></li>
-                                                <li><a href="#!">Huntington Beach</a></li>
-                                                <li><a href="#!">Irvine</a></li>
-                                                <li><a href="#!">Yorba Linda @ LA Fitness</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 col-xl-3">
-                                            <h6 class="font-weight-bold mt-3 mb-0">San Gabriel Valley</h6>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#!">Alhambra-Fremont @ LA Fitness</a></li>
-                                                <li><a href="#!">Arcadia @ LA Fitness</a></li>
-                                                <li><a href="#!">Diamond Bar @ LA Fitness</a></li>
-                                                <li><a href="#!">Pasadena</a></li>
-                                                <li><a href="#!">West Covina @ LA Fitness</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 col-xl-6">
-                                            <h6 class="font-weight-bold mt-3 mb-0">Silicon Valley</h6>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#!">North San Jose @ City Sports Club</a></li>
-                                                <li><a href="#!">San Jose-Almaden @ City Sports Club</a></li>
-                                                <li><a href="#!">San Jose-Bascom</a></li>
-                                                <li><a href="#!">San Jose-Blossom Hill @ City Sports Club</a></li>
-                                                <li><a href="#!">Sunnyvale @ City Sports Club</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 col-xl-3">
-                                            <h6 class="font-weight-bold mt-3 mb-0">San Diego County</h6>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#!">Carlsbad</a></li>
-                                                <li><a href="#!">Poway @ LA Fitness</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 col-xl-3">
-                                            <h6 class="font-weight-bold mt-3 mb-0">Los Angeles County</h6>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#!">Culver City @ LA Fitness</a></li>
-                                                <li><a href="#!">Harbor City @ LA Fitness</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 col-xl-6">
-                                            <h6 class="font-weight-bold mt-3 mb-0">Alameda County</h6>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#!">Hayward @ City Sports Club</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 col-xl-6">
-                                            <h6 class="font-weight-bold mt-3 mb-0">San Francisco</h6>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#!">San Francisco-20th Avenue @ City Sports
-                                                        Club</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 col-xl-6">
-                                            <h6 class="font-weight-bold mt-3 mb-0">Denver</h6>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#!">Highlands Ranch</a></li>
-                                            </ul>
-                                        </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Splash frontend project" />
+    <meta name="author" content="Miao Shi, Vibhuti Trivedi, Jordan VonBorstel, Xu Chen" />
+    <title>Swim Lessons</title>
+    <!-- SEO enhancement -->
+    <meta property="og:title" content="Swim lessons" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="splash.com" />
+    <meta property="og:description" content="Splash frontend project." />
+    <meta property="og:image" content="/Project_1/project_1/images/*" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Customer CSS -->
+    <link href="styles-swimlessons.css" rel="stylesheet" />
+    <link href="hdrftr.css" rel="stylesheet" />
+    <!-- Font-awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+</head>
+
+<body id="swimlesson">
+    <div id="app">
+        <nav class="navbar navbar-expand-xl navbar-dark sticky-top" id="nav-bar">
+            <a class="navbar-brand pl-4 pt-0" href="index.html">
+                <img src="project_1/images/logo-small.png" alt="Splashes Logo" width="250" height="auto">
+            </a>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mb-2">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="swimlessons.html">Swimming Lessons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="swimprograms.html">Swim Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="adultprograms.html">Adult Programs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Locations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="text-center text-md-left" id="locations-list">
+                                <div class="row text-left">
+                                    <div class="col-sm-6 col-xl-3">
+                                        <h6 class="font-weight-bold mt-3 mb-0">Orange County</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#!">Anaheim Hills @ LA Fitness</a></li>
+                                            <li><a href="#!">Huntington Beach</a></li>
+                                            <li><a href="#!">Irvine</a></li>
+                                            <li><a href="#!">Yorba Linda @ LA Fitness</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-3">
+                                        <h6 class="font-weight-bold mt-3 mb-0">San Gabriel Valley</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#!">Alhambra-Fremont @ LA Fitness</a></li>
+                                            <li><a href="#!">Arcadia @ LA Fitness</a></li>
+                                            <li><a href="#!">Diamond Bar @ LA Fitness</a></li>
+                                            <li><a href="#!">Pasadena</a></li>
+                                            <li><a href="#!">West Covina @ LA Fitness</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-6">
+                                        <h6 class="font-weight-bold mt-3 mb-0">Silicon Valley</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#!">North San Jose @ City Sports Club</a></li>
+                                            <li><a href="#!">San Jose-Almaden @ City Sports Club</a></li>
+                                            <li><a href="#!">San Jose-Bascom</a></li>
+                                            <li><a href="#!">San Jose-Blossom Hill @ City Sports Club</a></li>
+                                            <li><a href="#!">Sunnyvale @ City Sports Club</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-3">
+                                        <h6 class="font-weight-bold mt-3 mb-0">San Diego County</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#!">Carlsbad</a></li>
+                                            <li><a href="#!">Poway @ LA Fitness</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-3">
+                                        <h6 class="font-weight-bold mt-3 mb-0">Los Angeles County</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#!">Culver City @ LA Fitness</a></li>
+                                            <li><a href="#!">Harbor City @ LA Fitness</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-6">
+                                        <h6 class="font-weight-bold mt-3 mb-0">Alameda County</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#!">Hayward @ City Sports Club</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-6">
+                                        <h6 class="font-weight-bold mt-3 mb-0">San Francisco</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#!">San Francisco-20th Avenue @ City Sports
+                                                    Club</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-6">
+                                        <h6 class="font-weight-bold mt-3 mb-0">Denver</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#!">Highlands Ranch</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <a class="btn btn-primary rounded-pill bg-white border-0 px-3 custom-class" id="register-btn"
+                    href="signin-up.html" role="button">
+                    Register / Sign In
+                </a>
+            </div>
+        </nav>
+        <header id="swimlessons-header">
+            <div class="onimg1">
+                <h2 class="textonbabyimg1">Which Lesson is Best?</h2>
+            </div>
+        </header>
+
+        <main>
+            <section id="swimlessons">
+                <h2>Our Lesson Types</h2>
+                <div id="projectsplash"> <!-- Vue -->
+                    <!--<h3>Private Swim Lessons</h3>-->
+                    <projectsplash></projectsplash>
+                </div>
+                <p>Our <a href="#">private swim lessons</a> provide one-on-one instruction for students ages three
+                    months through adult. Private swim lessons are the best option for accelerated learning. Each lesson
+                    will allow our instructors to build on the momentum and skills taught in the previous lesson with
+                    minimal downtime. From the basics of putting your face into the water to refining your stroke
+                    technique, private lessons will offer the highest rate of progress. <a class="learn" href="#">Learn
+                        more here!</a></p>
+
+                <h3>Semi-Private Swim Lessons</h3>
+                <p>At Splashes, our <a href="#">semi-private swim lessons</a> offer students ages 2.5 to 13 the
+                    opportunity to interact with another student of a similar age and ability while still receiving
+                    personal attention. Whether you would like us to pair your child with another student of similar age
+                    and ability or would like to take lessons with a friend or sibling, our semi-private lessons are a
+                    cost effective option. Students also have the opportunity to observe one another in the lesson. <a
+                        class="learn" href="#">Learn more here!</a></p>
+
+                <h3>Parent & Me Lessons</h3>
+                <p>Our <a href="#">Parent and Me swimming lessons</a> (also known as “Mommy and Me” or “Daddy and Me”
+                    classes) gives parents the opportunity to be hands-on with their little one while our instructors
+                    facilitate the learning process between you and your child. These lessons provide a fun and relaxed
+                    environment for you and your child in the water. Children ages 3 months through 3 years of age can
+                    participate. However, we encourage children ages 2.5 and older to participate in private or
+                    semi-private swim lessons. <a class="learn" href="#">Learn more here!</a></p>
+
+                <h3>Stroke Clinic</h3>
+                <p>Splashes <a href="#">Stroke Clinics</a> give students the opportunity to advance their swimming
+                    techniques while in a group setting. Our Stroke Clinic classes place emphasis on proper technique
+                    over speed and prepare students for swim team. Swimmers ages 5 and older who are level 8 or higher
+                    can benefit from participating in these 40 minute classes. A strong technical foundation will ensure
+                    that students’ progress much faster when the time comes for them to work on speed. Our stroke
+                    clinics are exciting and fast paced, where each student will receive a great workout. <a
+                        class="learn" href="#">Learn more here!</a></p>
+
+                <h3>Adult Swim Lessons</h3>
+                <p>It is never too late to learn how to swim! Whether you are looking to learn the basics or improve
+                    your technique to use swimming as a form of exercise, our trained instructors will tailor each
+                    lesson to fit your individual needs. At Splashes, our adult lessons are geared for swimmers ages 13
+                    and older. From beginners to advanced, our <a href="#">adult swimming lessons</a> are a great option
+                    for those looking to conquer their fear of the water or who are looking to become stronger swimmers.
+                    <a class="learn" href="#">Learn more here!</a>
+                </p>
+            </section>
+        </main>
+    </div>
+    <!-- Footer -->
+    <footer class="splash-site-footer">
+        <div class="footer-logo">
+            <img src="./project_1/images/wave-small.png" alt="footer-logo" />
+        </div>
+        <div class="footer-part-one row mt-5">
+            <div class="col-md-6 col-12">
+                <nav class="navbar navbar-expand">
+                    <ul class="navbar-nav nav-container">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
+                            <!-- target top location and open -->
+                            <a class="nav-link" href="#">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Register / Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Careers</a>
                         </li>
                     </ul>
-                    <a class="btn btn-primary rounded-pill bg-white border-0 px-3 custom-class" id="register-btn"
-                        href="signin-up.html" role="button">
-                        Register / Sign In
-                    </a>
-                </div>
-            </nav>
-            <header id="swimlessons-header">
-                <div class="onimg1">
-                    <h2 class="textonbabyimg1">Which Lesson is Best?</h2>
-                </div>
-            </header>
-
-            <main>
-                <section id="swimlessons">
-                    <h2>Our Lesson Types</h2>
-                    <div id="projectsplash"> <!-- Vue -->
-                        <!--<h3>Private Swim Lessons</h3>-->
-                        <projectsplash></projectsplash>
-                    </div>
-                    <p>Our <a href="#">private swim lessons</a> provide one-on-one instruction for students ages three months through adult. Private swim lessons are the best option for accelerated learning. Each lesson will allow our instructors to build on the momentum and skills taught in the previous lesson with minimal downtime. From the basics of putting your face into the water to refining your stroke technique, private lessons will offer the highest rate of progress. <a class="learn" href="#">Learn more here!</a></p>
-
-                    <h3>Semi-Private Swim Lessons</h3>
-                    <p>At Splashes, our <a href="#">semi-private swim lessons</a> offer students ages 2.5 to 13 the opportunity to interact with another student of a similar age and ability while still receiving personal attention. Whether you would like us to pair your child with another student of similar age and ability or would like to take lessons with a friend or sibling, our semi-private lessons are a cost effective option. Students also have the opportunity to observe one another in the lesson. <a class="learn" href="#">Learn more here!</a></p>
-
-                    <h3>Parent & Me Lessons</h3>
-                    <p>Our <a href="#">Parent and Me swimming lessons</a> (also known as “Mommy and Me” or “Daddy and Me” classes) gives parents the opportunity to be hands-on with their little one while our instructors facilitate the learning process between you and your child. These lessons provide a fun and relaxed environment for you and your child in the water. Children ages 3 months through 3 years of age can participate. However, we encourage children ages 2.5 and older to participate in private or semi-private swim lessons. <a class="learn" href="#">Learn more here!</a></p>
-                    
-                    <h3>Stroke Clinic</h3>
-                    <p>Splashes <a href="#">Stroke Clinics</a> give students the opportunity to advance their swimming techniques while in a group setting. Our Stroke Clinic classes place emphasis on proper technique over speed and prepare students for swim team. Swimmers ages 5 and older who are level 8 or higher can benefit from participating in these 40 minute classes. A strong technical foundation will ensure that students’ progress much faster when the time comes for them to work on speed. Our stroke clinics are exciting and fast paced, where each student will receive a great workout. <a class="learn" href="#">Learn more here!</a></p>
-
-                    <h3>Adult Swim Lessons</h3>
-                    <p>It is never too late to learn how to swim! Whether you are looking to learn the basics or improve your technique to use swimming as a form of exercise, our trained instructors will tailor each lesson to fit your individual needs. At Splashes, our adult lessons are geared for swimmers ages 13 and older. From beginners to advanced, our <a href="#">adult swimming lessons</a> are a great option for those looking to conquer their fear of the water or who are looking to become stronger swimmers. <a class="learn" href="#">Learn more here!</a></p>
-                </section>
-            </main>
+                </nav>
+            </div>
+            <div class="col-md-6 col-12 icon-wrapper">
+                <a class="fa-stack" style="vertical-align: top;" href="#">
+                    <i class="fa-solid fa-circle fa-stack-2x" style="color: #055e97"></i>
+                    <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                </a>
+                <a class="fa-stack" style="vertical-align: top" href="#">
+                    <i class="fa-solid fa-circle fa-stack-2x" style="color: #656667"></i>
+                    <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
+                </a>
+                <a class="fa-stack" style="vertical-align: top" href="#">
+                    <i class="fa-solid fa-circle fa-stack-2x" style="color: #27dffd"></i>
+                    <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+                </a>
+                <a class="fa-stack" style="vertical-align: top" href="#">
+                    <i class="fa-solid fa-circle fa-stack-2x" style="color: #cc0c24"></i>
+                    <i class="fa-brands fa-yelp fa-stack-1x fa-inverse"></i>
+                </a>
+                <a class="fa-stack" style="vertical-align: top" href="#">
+                    <i class="fa-solid fa-circle fa-stack-2x" style="color: #71b4fc"></i>
+                    <i class="fa-brands fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </a>
+                <a class="fa-stack" style="vertical-align: top" href="#">
+                    <i class="fa-solid fa-circle fa-stack-2x" style="color: #cc0c24"></i>
+                    <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                </a>
+            </div>
         </div>
-        <!-- Footer -->
-        <footer class="splash-site-footer">
-            <div class="footer-logo">
-                <img src="./project_1/images/wave-small.png" alt="footer-logo" />
-            </div>
-            <div class="footer-part-one row mt-5">
-                <div class="col-md-6 col-12">
-                    <nav class="navbar navbar-expand">
-                        <ul class="navbar-nav nav-container">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <!-- target top location and open -->
-                                <a class="nav-link" href="#">Locations</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">FAQs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Register / Sign In</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Careers</a>
-                            </li>
-                        </ul>
-                    </nav>
+        <div class="footer-contact-container">
+            <div class="footer-contact">
+                <div>
+                    <div>Orange County</div>
+                    <a href="tel:9494500777">(949) 450-0777</a>
                 </div>
-                <div class="col-md-6 col-12 icon-wrapper">
-                    <a class="fa-stack" style="vertical-align: top; margin-left: 200px" href="#">
-                        <i class="fa-solid fa-circle fa-stack-2x" style="color: #055e97"></i>
-                        <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
-                    </a>
-                    <a class="fa-stack" style="vertical-align: top" href="#">
-                        <i class="fa-solid fa-circle fa-stack-2x" style="color: #656667"></i>
-                        <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
-                    </a>
-                    <a class="fa-stack" style="vertical-align: top" href="#">
-                        <i class="fa-solid fa-circle fa-stack-2x" style="color: #27dffd"></i>
-                        <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
-                    </a>
-                    <a class="fa-stack" style="vertical-align: top" href="#">
-                        <i class="fa-solid fa-circle fa-stack-2x" style="color: #cc0c24"></i>
-                        <i class="fa-brands fa-yelp fa-stack-1x fa-inverse"></i>
-                    </a>
-                    <a class="fa-stack" style="vertical-align: top" href="#">
-                        <i class="fa-solid fa-circle fa-stack-2x" style="color: #71b4fc"></i>
-                        <i class="fa-brands fa-facebook-f fa-stack-1x fa-inverse"></i>
-                    </a>
-                    <a class="fa-stack" style="vertical-align: top" href="#">
-                        <i class="fa-solid fa-circle fa-stack-2x" style="color: #cc0c24"></i>
-                        <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
-                    </a>
+                <div>
+                    <div>San Diego County</div>
+                    <a href="tel:7606039400">(760) 603-9400</a>
+                </div>
+                <div>
+                    <div>Los Angeles County</div>
+                    <a href="tel:6268361200">(626) 836-1200</a>
+                </div>
+                <div>
+                    <div>Northern California</div>
+                    <a href="tel:4082791700">(408) 279-1700</a>
+                </div>
+                <div>
+                    <div>Denver</div>
+                    <a href="7203447700">(720) 344-7700</a>
                 </div>
             </div>
-            <div class="footer-contact-container">
-                <div class="footer-contact">
+        </div>
+        <div class="foot-part-two-container">
+            <div class="footer-part-two row">
+                <div class="col-sm-8 col-12 sponsors-logo">
                     <div>
-                        <div>Orange County</div>
-                        <a href="tel:9494500777">(949) 450-0777</a>
+                        <img src="./project_1/images/sponsors/footer-usssa-logo-2.png" alt="usssa-logo" />
                     </div>
                     <div>
-                        <div>San Diego County</div>
-                        <a href="tel:7606039400">(760) 603-9400</a>
+                        <img src="./project_1/images/sponsors/footer-ndpa-logo.png" alt="ndpa-logo" />
                     </div>
                     <div>
-                        <div>Los Angeles County</div>
-                        <a href="tel:6268361200">(626) 836-1200</a>
+                        <img src="./project_1/images/sponsors/footer-member-issa-logo.png" alt="issa-logo" />
                     </div>
                     <div>
-                        <div>Northern California</div>
-                        <a href="tel:4082791700">(408) 279-1700</a>
-                    </div>
-                    <div>
-                        <div>Denver</div>
-                        <a href="7203447700">(720) 344-7700</a>
+                        <img src="./project_1/images/sponsors/footer-stop-drowning-now-logo.png" alt="stop-logo" />
                     </div>
                 </div>
-            </div>
-            <div class="foot-part-two-container">
-                <div class="footer-part-two row">
-                    <div class="col-sm-8 col-12 sponsors-logo">
-                        <div>
-                            <img src="./project_1/images/sponsors/footer-usssa-logo-2.png" alt="usssa-logo" />
-                        </div>
-                        <div>
-                            <img src="./project_1/images/sponsors/footer-ndpa-logo.png" alt="ndpa-logo" />
-                        </div>
-                        <div>
-                            <img src="./project_1/images/sponsors/footer-member-issa-logo.png" alt="issa-logo" />
-                        </div>
-                        <div>
-                            <img src="./project_1/images/sponsors/footer-stop-drowning-now-logo.png" alt="stop-logo" />
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-12 copyright">
-                        © 2024 Splashes.<br />
-                        All Rights Reserved
-                    </div>
+                <div class="col-sm-4 col-12 copyright">
+                    © 2024 Splashes.<br />
+                    All Rights Reserved
                 </div>
             </div>
-        </footer>
-        
+        </div>
+    </footer>
 
-        <!-- External JS  -->
-        <script src="scripts/locations.js"></script>
-    
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        <!-- Vue -->
-        <script>
-            Vue.component('projectsplash',{
-                template : '<div><h3>Private Swim Lessons</h3></div>'
-            });
-        
-            var vm1 = new Vue({
-                el: '#projectsplash'
-            })
-        </script>
-    </body>
-    
+    <!-- External JS  -->
+    <script src="scripts/locations.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Vue -->
+    <script>
+        Vue.component('projectsplash', {
+            template: '<div><h3>Private Swim Lessons</h3></div>'
+        });
+
+        var vm1 = new Vue({
+            el: '#projectsplash'
+        })
+    </script>
+</body>
+
 </html>

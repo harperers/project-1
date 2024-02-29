@@ -233,6 +233,19 @@ nav {
     text-align: right;
 }
 
+@media (min-width: 1200px) {
+    .splash-site-footer .icon-wrapper {
+        padding-left: 200px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .splash-site-footer .footer-part-one {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 767px) {
     .splash-site-footer .footer-contact {
         flex-direction: column;
