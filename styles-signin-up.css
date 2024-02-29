@@ -15,7 +15,7 @@ body {
     /* Added background color */
     border-radius: 10px;
     /* Added border-radius to make the form square-shaped */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 50px black;
     /* Added box-shadow for the shadow effect */
 }
 
@@ -95,9 +95,9 @@ label {
 }
 
 .splashwave-img {
-    max-width: 100%; /* Ensure image doesn't exceed container width */
-    height: auto; /* Maintain aspect ratio */
-    display: inline-block; /* Allow positioning */
+    max-width: 100%; 
+    height: auto; 
+    display: inline-block; 
     
 }
 .splashwave-container {
@@ -121,3 +121,4 @@ label {
 #password {
     border: none;
 }
+
