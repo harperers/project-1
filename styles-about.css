@@ -115,4 +115,17 @@ p,
 
         #awards ul li {
             margin: 5%;
+            width: 250px;
+            height:auto;
+        }
+        h1{
+            color: #444444;
+        }
+        @media screen and (max-width: 1200px) {
+            h1{
+                font-size: 32px;
+            }
+            .textonbabyimg1 {
+                font-size: 32px !important; 
+            }
         }
