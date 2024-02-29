@@ -178,5 +178,10 @@
             .textonbabyimg1 {
                 font-size: 32px !important; 
             }
+            #home {
+                background-size: 100% 520px;
+            }
+            #banners {
+            }
         }
           
