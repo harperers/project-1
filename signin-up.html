@@ -26,27 +26,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Include your external JavaScript file -->
     <script src="signin.js"></script>
+    </head>
     
 
 <body>
-    <!--Container for images-->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!--goes to home -->
-                <a href="index.html">
-                    <div class="splashwave-container">
-                        <img src="project_1\Images\splash-wave.png" alt="Splashwave" class="splashwave-img">
+        <div class="container"> <!--container for images-->
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="index.html"> <!--direct to-->
+                        <div class="splashwave-container">
+                            <img src="project_1\Images\splash-wave.png" alt="Splashwave" class="splashwave-img">
+                        </div>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <img src="project_1\Images\shark-full.png" alt="Shark" class="shark-img">
                     </div>
-                </a>
-        <div class="col-md-12">
-            <div class="col-md-4">
-        <img src="project_1\Images\shark-full.png" alt="Shark" class="shark-img">
-        </div>
-          </div>
+                </div>
             </div>
-            </div>
-        
+
+    
         <h2>SIGN IN</h2>
         <form id="signin-form" action="#">
 
@@ -57,16 +60,32 @@
             <div class="form-group forgot-password-container">
                 <a href="#" class="forgot-password">Forgot Password?</a> <!--Forgot PW Word-->
             </div>
-            <div id="buttons d-flex flex-column flex-md-row"> <!--Buttons-->
-                <button type="button" value="Sign-in" class="btn btn-info btn-lg btn-rounded mb-3 btn-faded col-md-6 col-lg-12 custom-text-color">Sign In</button>
-                <button type="button" value="Sign Up" class="btn btn-outline-info btn-lg btn-rounded col-md-6 col-lg-12">Sign-up</button>
-            </div>
-        </form>
+             <!-- Buttons within the same form -->
+    <div class="form-group row justify-content-center">
+        <div class="col-sm-12 col-md-4 mb-3 mb-md-0"> <!-- Full width column for stacking on small screens -->
+            <button type="button" value="Sign-in" class="btn btn-info btn-lg btn-rounded btn-block custom-text-color custom-btn">Sign In</button>
+        </div>
+        <div class="col-sm-12 col-md-4"> <!-- Full width column for stacking on small screens -->
+            <button type="button" value="Sign Up" class="btn btn-outline-info btn-lg btn-rounded btn-block custom-btn">Sign Up</button>
+        </div>
     </div>
+        </div>
+        <script>
+            //alert for user to get home//
+            // Get the form element//
+        var signInForm = document.getElementById('signin-form');
 
-        </form>
+        // Define a variable for the alert message//
+        var alertMessage = 'Click the Splashes logo to return home!';
 
-    </div>
-</body>
-
-</html>
+        //  click event listener to the form//
+        signInForm.addEventListener('click', function(event) {
+            // alert with the dynamically generated message//
+            alert(String(alertMessage));
+        });
+    </script>
+            
+        
+    </body>
+    
+    </html>
